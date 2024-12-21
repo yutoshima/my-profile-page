@@ -35,7 +35,7 @@ const ProfileText = styled.div`
 const Profile = () => {
   return (
     <DetailProfile>
-      <ProfileImage src="/img/icon.jpg" alt="Profile" />
+      <ProfileImage src="/img/icon.png" alt="Profile" />
       <ProfileText>
         <h4>YutoShima</h4>
         <h5>元Kobe x Engineer's Lab 運営、Engineer</h5>

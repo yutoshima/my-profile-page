@@ -5,7 +5,6 @@ import { IconsList, Icons } from './Elements/Icons';
 import { BsPerson, BsVectorPen, BsLightbulb, BsChatDots, BsAward } from "react-icons/bs";
 import Profile from './Elements/Profile';
 import CardComponent from './Elements/Card';
-import ContactForm from './Elements/Form';
 import SkillCard from './Elements/Skill';
 import { careerData } from './Data/careerData';
 
