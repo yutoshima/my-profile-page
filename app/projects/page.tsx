@@ -2,27 +2,32 @@ import Link from "next/link";
 import React from "react";
 import { allProjects } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
+import type { Project } from "contentlayer/generated";
 import { Card } from "../components/card";
 import { Article } from "./article";
 import { Redis } from "@upstash/redis";
 import { Eye } from "lucide-react";
+import type { MDXContent } from "mdx/types";
 
 const redis = Redis.fromEnv();
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
-  const views = (
-    await redis.mget<number[]>(
-      ...allProjects.map((p) => ["pageviews", "projects", p.slug].join(":")),
-    )
-  ).reduce((acc, v, i) => {
-    acc[allProjects[i].slug] = v ?? 0;
-    return acc;
-  }, {} as Record<string, number>);
+  const keys = allProjects.map((p) => ["pageviews", "projects", p.slug].join(":"));
 
-  const featured = allProjects.find((project) => project.slug === "unkey")!;
-  const top2 = allProjects.find((project) => project.slug === "planetfall")!;
-  const top3 = allProjects.find((project) => project.slug === "highstorm")!;
+  // Check if keys array is not empty before calling mget
+  const views: Record<string, number> = keys.length > 0 ? (
+    (await redis.mget(...keys) as number[])
+  ).reduce((acc, v, i) => {
+    acc[allProjects[i].slug] = (v !== null ? v : 0);
+    return acc;
+  }, {} as Record<string, number>) : {};
+  const defaultProject: Project = { slug: "", date: undefined, title: "Unknown Project", description: "No description available", _id: "", _raw: { sourceFilePath: "", sourceFileName: "", sourceFileDir: "", contentType: "markdown", flattenedPath: "" }, type: "Project", body: "" as unknown as MDXContent, path: "", published: false };
+
+  const featured = allProjects.find((project) => project.slug === "unkey") ?? defaultProject;
+  const top2 = allProjects.find((project) => project.slug === "planetfall") ?? defaultProject;
+  const top3 = allProjects.find((project) => project.slug === "highstorm") ?? defaultProject;
+
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
