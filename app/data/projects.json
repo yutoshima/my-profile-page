@@ -1,0 +1,118 @@
+[
+  {
+    "id": "portfolio",
+    "title": "ポートフォリオサイト",
+    "description": "Next.js、TailwindCSS、Contentlayerを使用して構築された個人ポートフォリオサイト",
+    "longDescription": "このポートフォリオサイトは、最新のWeb技術を活用して作成しました。Next.jsのApp Routerを採用し、TailwindCSSでスタイリング、Framer Motionでアニメーションを実装しています。また、ContentlayerでMarkdownコンテンツを管理し、柔軟なコンテンツ更新が可能です。",
+    "slug": "portfolio",
+    "date": "2023-12-15",
+    "technologies": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Framer Motion",
+      "Contentlayer"
+    ],
+    "imageUrl": "/portfolio.png",
+    "githubUrl": "https://github.com/yutoshima/my-profile-app",
+    "featured": true
+  },
+  {
+    "id": "ecommerce",
+    "title": "Eコマースプラットフォーム",
+    "description": "React、Next.js、Stripeを使用したオンラインショッピングプラットフォーム",
+    "longDescription": "フルスタックのEコマースプラットフォームで、商品一覧、詳細ページ、カート機能、決済プロセスまでを実装しています。認証にはNext-Authを使用し、バックエンドはPrismaとPostgreSQLで構築。Stripeを統合して安全な決済処理を実現しました。",
+    "slug": "ecommerce",
+    "date": "2023-09-20",
+    "technologies": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL",
+      "Stripe",
+      "Next-Auth"
+    ],
+    "projectUrl": "https://nextjs-ecommerce-demo.vercel.app",
+    "githubUrl": "https://github.com/yutoshima/nextjs-ecommerce",
+    "featured": true
+  },
+  {
+    "id": "task-manager",
+    "title": "タスク管理アプリ",
+    "description": "React、TypeScript、Firebase を使用したタスク管理アプリケーション",
+    "longDescription": "直感的なUIを持つタスク管理アプリです。ドラッグ&ドロップでタスクの並べ替え、カテゴリー分け、優先度設定、期限設定などの機能を実装。Firebaseを使ってリアルタイムデータ同期とユーザー認証を行っています。",
+    "slug": "task-manager",
+    "date": "2023-06-10",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Firebase",
+      "Firestore",
+      "React Beautiful DnD",
+      "Chakra UI"
+    ],
+    "projectUrl": "https://task-manager-app-demo.web.app",
+    "githubUrl": "https://github.com/yutoshima/task-manager-app",
+    "featured": true
+  },
+  {
+    "id": "social-network",
+    "title": "SNSクローン",
+    "description": "React、GraphQL、MongoDB を使用したソーシャルネットワークアプリケーション",
+    "longDescription": "主要なSNS機能を備えたアプリケーションです。ユーザープロフィール、投稿、コメント、いいね、フォロー機能を実装。GraphQLを使用したAPIで効率的なデータ取得を行い、MongoDB Atlasでデータを管理しています。",
+    "slug": "social-network",
+    "date": "2023-03-05",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "GraphQL",
+      "Apollo",
+      "MongoDB",
+      "JWT認証"
+    ],
+    "githubUrl": "https://github.com/yutoshima/social-network-app",
+    "featured": false
+  },
+  {
+    "id": "weather-app",
+    "title": "天気予報アプリ",
+    "description": "React Nativeで開発したクロスプラットフォーム天気予報アプリケーション",
+    "longDescription": "位置情報を活用してリアルタイムの天気予報と週間予報を表示するモバイルアプリです。OpenWeatherMap APIを使用してデータを取得し、美しいUIで天気情報を視覚化しています。お気に入りの場所を保存する機能も実装。",
+    "slug": "weather-app",
+    "date": "2022-11-22",
+    "technologies": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "OpenWeatherMap API",
+      "Async Storage",
+      "React Navigation"
+    ],
+    "projectUrl": "https://expo.dev/@yutoshima/weather-app",
+    "githubUrl": "https://github.com/yutoshima/react-native-weather",
+    "featured": false
+  },
+  {
+    "id": "blog-platform",
+    "title": "ブログプラットフォーム",
+    "description": "Next.js、MDX、Vercelを使用した高速ブログプラットフォーム",
+    "longDescription": "技術ブログ向けに最適化されたプラットフォームです。MDXでコードブロックのシンタックスハイライトや様々なコンポーネントを記事内に埋め込み可能。検索機能、タグフィルター、関連記事表示など、読者体験を向上させる機能を実装しています。",
+    "slug": "blog-platform",
+    "date": "2022-08-17",
+    "technologies": [
+      "Next.js",
+      "MDX",
+      "TailwindCSS",
+      "Vercel",
+      "Next-SEO",
+      "Algolia Search"
+    ],
+    "projectUrl": "https://nextjs-blog-platform-demo.vercel.app",
+    "githubUrl": "https://github.com/yutoshima/nextjs-blog-platform",
+    "featured": false
+  }
+] 

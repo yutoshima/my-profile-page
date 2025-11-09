@@ -1,0 +1,180 @@
+{
+  "basics": {
+    "name": "島 悠人",
+    "label": "フロントエンドエンジニア",
+    "email": "yutoshima1234@gmail.com",
+    "phone": "090-XXXX-XXXX",
+    "location": {
+      "address": "東京都新宿区",
+      "postalCode": "160-XXXX",
+      "city": "東京",
+      "countryCode": "JP"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "yutoshima",
+        "url": "https://github.com/yutoshima"
+      },
+      {
+        "network": "Twitter",
+        "username": "Yuto00579583",
+        "url": "https://x.com/Yuto00579583"
+      }
+    ],
+    "summary": "Next.js、React、TypeScriptを専門とするフロントエンドエンジニアです。5年以上の開発経験を持ち、モダンなWebアプリケーション開発に情熱を注いでいます。ユーザー体験とパフォーマンスに優れたプロダクト開発を得意としています。"
+  },
+  "work": [
+    {
+      "company": "テック株式会社",
+      "position": "シニアフロントエンドエンジニア",
+      "website": "https://example.com",
+      "startDate": "2021-01",
+      "endDate": "現在",
+      "summary": "大規模Webアプリケーションのフロントエンド開発とチームリード",
+      "highlights": [
+        "Reactを用いた大規模Webアプリケーションの開発・保守",
+        "チーム全体のコード品質向上のためのコードレビュー体制の構築",
+        "Next.jsを用いたパフォーマンス最適化とSEO対策",
+        "新人エンジニアのメンタリングと技術サポート"
+      ]
+    },
+    {
+      "company": "スタートアップX",
+      "position": "フロントエンドエンジニア",
+      "website": "https://example.com",
+      "startDate": "2018-04",
+      "endDate": "2020-12",
+      "summary": "SaaSプロダクトのフロントエンド開発",
+      "highlights": [
+        "ユーザー向けダッシュボードのUI/UX設計と実装",
+        "マイクロフロントエンドアーキテクチャの導入",
+        "CI/CDパイプラインの構築とテスト自動化",
+        "TypeScriptとReactの導入によるコードベース改善"
+      ]
+    },
+    {
+      "company": "デジタルソリューションズ",
+      "position": "Webデベロッパー（インターン）",
+      "website": "https://example.com",
+      "startDate": "2017-06",
+      "endDate": "2018-03",
+      "summary": "Webサイト開発とフロントエンド最適化",
+      "highlights": [
+        "企業向けWebサイトのフロントエンド開発",
+        "レスポンシブデザインの実装と最適化",
+        "JavaScriptフレームワークを用いたSPAの開発",
+        "UXリサーチとA/Bテストの実施"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "東京工科大学",
+      "area": "コンピュータサイエンス",
+      "studyType": "学士",
+      "startDate": "2013-04",
+      "endDate": "2017-03",
+      "gpa": "3.8/4.0",
+      "courses": [
+        "ウェブプログラミング",
+        "ユーザーインターフェース設計",
+        "データベース設計",
+        "アルゴリズムとデータ構造"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "フロントエンド開発",
+      "level": "上級",
+      "keywords": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Vue.js"
+      ]
+    },
+    {
+      "name": "バックエンド開発",
+      "level": "中級",
+      "keywords": [
+        "Node.js",
+        "Express",
+        "GraphQL",
+        "REST API"
+      ]
+    },
+    {
+      "name": "デザインとUI/UX",
+      "level": "中級",
+      "keywords": [
+        "Figma",
+        "UI設計",
+        "レスポンシブデザイン",
+        "アクセシビリティ"
+      ]
+    },
+    {
+      "name": "ツールとワークフロー",
+      "level": "上級",
+      "keywords": [
+        "Git",
+        "GitHub",
+        "CI/CD",
+        "Docker",
+        "Webpack",
+        "Vite",
+        "Jest"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "日本語",
+      "fluency": "ネイティブ"
+    },
+    {
+      "language": "英語",
+      "fluency": "ビジネスレベル"
+    }
+  ],
+  "interests": [
+    {
+      "name": "テクノロジー",
+      "keywords": [
+        "Webパフォーマンス最適化",
+        "フロントエンド自動化",
+        "アクセシビリティ",
+        "JAMstack"
+      ]
+    },
+    {
+      "name": "趣味",
+      "keywords": [
+        "テックブログ執筆",
+        "オープンソース貢献",
+        "読書",
+        "旅行"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "田中 健太",
+      "reference": "島さんは技術的に優れているだけでなく、チーム全体を引き上げるリーダーシップも持っています。複雑な問題も的確に解決し、誰もが信頼できる頼れる存在です。"
+    },
+    {
+      "name": "佐藤 美咲",
+      "reference": "島さんはデザイナーとエンジニアの架け橋となり、技術とデザインの両方を理解した上で最適な実装を提案してくれました。彼のおかげで製品の品質が大幅に向上しました。"
+    }
+  ],
+  "fileFormat": {
+    "pdfUrl": "/resume/shima_yuto_resume.pdf",
+    "docxUrl": "/resume/shima_yuto_resume.docx",
+    "jsonUrl": "/api/resume"
+  }
+} 

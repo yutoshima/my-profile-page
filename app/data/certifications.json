@@ -1,0 +1,47 @@
+[
+  {
+    "id": "aws-developer",
+    "name": "AWS 認定デベロッパー - アソシエイト",
+    "issuer": "Amazon Web Services",
+    "issueDate": "2023-08",
+    "expirationDate": "2026-08",
+    "credentialUrl": "https://www.credly.com/badges/example",
+    "description": "AWSサービスを使用したアプリケーション開発における知識と技術を証明する認定資格です。"
+  },
+  {
+    "id": "gcp-professional",
+    "name": "Google Cloud Professional Cloud Developer",
+    "issuer": "Google Cloud",
+    "issueDate": "2023-04",
+    "expirationDate": "2025-04",
+    "credentialUrl": "https://www.credential.net/example",
+    "description": "GCPのサービスを使用したアプリケーション開発スキルを証明する認定資格です。"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript認定プロフェッショナル",
+    "issuer": "OpenJS Foundation",
+    "issueDate": "2022-11",
+    "expirationDate": null,
+    "credentialUrl": "https://openjsf.org/certification",
+    "description": "JavaScript言語とその標準ライブラリに関する深い知識と理解を証明する認定資格です。"
+  },
+  {
+    "id": "react-certification",
+    "name": "React開発者認定",
+    "issuer": "React Training",
+    "issueDate": "2022-06",
+    "expirationDate": null,
+    "credentialUrl": "https://example.com/react-cert",
+    "description": "Reactを使用したモダンなフロントエンド開発の専門知識を証明する認定資格です。"
+  },
+  {
+    "id": "scrum-master",
+    "name": "Professional Scrum Master I (PSM I)",
+    "issuer": "Scrum.org",
+    "issueDate": "2021-09",
+    "expirationDate": null,
+    "credentialUrl": "https://www.scrum.org/example",
+    "description": "スクラムフレームワークの理解とスクラムマスターとしての役割を果たす能力を証明する認定資格です。"
+  }
+] 

@@ -1,0 +1,6 @@
+[submodule "my-profile-page"]
+	path = my-profile-page
+	url = https://github.com/yutoshima/my-profile-page.git
+[submodule "portfolio"]
+    path = portfolio
+    url = https://github.com/yutoshima/my-profile-page.git

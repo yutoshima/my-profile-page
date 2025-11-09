@@ -1,0 +1,21 @@
+{
+  "name": "島 悠人",
+  "title": "フロントエンドエンジニア",
+  "summary": "Next.js、React、TypeScriptを専門とするフロントエンドエンジニアです。使いやすいUIとパフォーマンスを重視したWebアプリケーションの開発に情熱を持っています。",
+  "location": "東京都",
+  "email": "yutoshima1234@gmail.com",
+  "profileImage": "/profile.jpg",
+  "availableForWork": true,
+  "headings": {
+    "skills": "スキルセット",
+    "experience": "経歴",
+    "projects": "作品紹介",
+    "contact": "お問い合わせ"
+  },
+  "descriptions": {
+    "skills": "私が習得したスキルと技術スタックです。常に新しい技術を学び、スキルを向上させています。",
+    "experience": "これまでの私の職務経歴と経験をご紹介します。様々なプロジェクトと役割を通じて、フロントエンド開発の専門知識を培ってきました。",
+    "projects": "これまでに取り組んできた個人プロジェクトと実務開発案件の一部をご紹介します。各プロジェクトで習得した技術と解決した課題に焦点を当てています。",
+    "contact": "お仕事のご依頼やご質問など、お気軽にご連絡ください。フォームまたはSNSからご連絡いただけます。"
+  }
+} 

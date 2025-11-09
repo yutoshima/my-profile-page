@@ -1,0 +1,74 @@
+[
+  {
+    "name": "React",
+    "level": 90,
+    "description": "フロントエンド開発の主要フレームワーク",
+    "category": "フロントエンド"
+  },
+  {
+    "name": "Next.js",
+    "level": 85,
+    "description": "Reactベースのフルスタックフレームワーク",
+    "category": "フロントエンド"
+  },
+  {
+    "name": "TypeScript",
+    "level": 85,
+    "description": "型安全なJavaScript",
+    "category": "言語"
+  },
+  {
+    "name": "JavaScript",
+    "level": 95,
+    "description": "Webフロントエンドの基本言語",
+    "category": "言語"
+  },
+  {
+    "name": "Tailwind CSS",
+    "level": 90,
+    "description": "ユーティリティファーストCSSフレームワーク",
+    "category": "フロントエンド"
+  },
+  {
+    "name": "Node.js",
+    "level": 80,
+    "description": "サーバーサイドJavaScript実行環境",
+    "category": "バックエンド"
+  },
+  {
+    "name": "Express",
+    "level": 75,
+    "description": "Node.jsのWebアプリケーションフレームワーク",
+    "category": "バックエンド"
+  },
+  {
+    "name": "MongoDB",
+    "level": 70,
+    "description": "NoSQLデータベース",
+    "category": "データベース"
+  },
+  {
+    "name": "GraphQL",
+    "level": 65,
+    "description": "APIのためのクエリ言語",
+    "category": "バックエンド"
+  },
+  {
+    "name": "Git",
+    "level": 85,
+    "description": "バージョン管理システム",
+    "category": "ツール"
+  },
+  {
+    "name": "Docker",
+    "level": 70,
+    "description": "コンテナ化プラットフォーム",
+    "category": "DevOps"
+  },
+  {
+    "name": "AWS",
+    "level": 65,
+    "description": "クラウドサービス",
+    "category": "DevOps"
+  }
+] 

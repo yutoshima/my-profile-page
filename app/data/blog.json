@@ -1,0 +1,26 @@
+[
+  {
+    "id": "nextjs-static-export",
+    "title": "Next.jsの静的エクスポート機能を活用する方法",
+    "summary": "Next.jsのstatic exportを使って高速なウェブサイトを構築する方法を解説します。",
+    "date": "2024-03-10",
+    "tags": ["Next.js", "React", "静的サイト生成", "パフォーマンス最適化"],
+    "content": "Next.jsの静的エクスポート（Static Export）機能を活用すると、サーバーサイドの処理なしで高速なウェブサイトを構築できます。この記事では、設定方法と注意点について詳しく解説します。\n\n## 静的エクスポートとは\n\n静的エクスポートとは、Next.jsアプリケーションをビルド時にHTMLファイルとして出力する機能です。これにより、CDNでのホスティングが容易になり、読み込み速度も向上します。\n\n## 設定方法\n\n`next.config.js`に以下の設定を追加するだけで静的エクスポートが可能になります：\n\n```javascript\nmodule.exports = {\n  output: 'export',\n}\n```\n\n## 注意点\n\n静的エクスポートを使用する場合、APIルートやサーバーサイドの機能（getServerSideProps等）は使用できません。データ取得はクライアントサイドで行うか、ビルド時にgetStaticPropsを使用する必要があります。"
+  },
+  {
+    "id": "react-performance",
+    "title": "Reactアプリケーションのパフォーマンス最適化テクニック",
+    "summary": "Reactアプリケーションの速度を向上させるための実践的なテクニックを紹介します。",
+    "date": "2024-02-15",
+    "tags": ["React", "パフォーマンス", "最適化", "メモ化"],
+    "content": "Reactアプリケーションのパフォーマンスを最適化するためのテクニックをいくつか紹介します。これらを実践することで、ユーザー体験を大幅に向上させることができます。\n\n## 1. メモ化を活用する\n\nReactの`React.memo`、`useMemo`、`useCallback`を適切に使用することで、不要な再レンダリングを防ぐことができます。\n\n```jsx\n// コンポーネントのメモ化\nconst MemoizedComponent = React.memo(MyComponent);\n\n// 値のメモ化\nconst memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);\n\n// 関数のメモ化\nconst memoizedCallback = useCallback(() => {\n  doSomething(a, b);\n}, [a, b]);\n```\n\n## 2. 仮想化リストを使用する\n\n大量のリストデータを表示する場合は、react-windowやreact-virtualized等のライブラリを使用して、現在表示されている部分のみをレンダリングすることで、パフォーマンスを向上させることができます。\n\n## 3. コード分割とLazy Loading\n\n`React.lazy`と`Suspense`を使用して、必要なコンポーネントを必要なタイミングで読み込むことができます。これにより、初期ロード時間を短縮できます。"
+  },
+  {
+    "id": "typescript-best-practices",
+    "title": "TypeScriptでのベストプラクティス：型安全な開発の実現",
+    "summary": "TypeScriptを使った開発における実践的なベストプラクティスを紹介します。",
+    "date": "2024-01-20",
+    "tags": ["TypeScript", "型安全", "開発手法", "ベストプラクティス"],
+    "content": "TypeScriptを使った開発において、より型安全でメンテナンスしやすいコードを書くためのベストプラクティスを紹介します。\n\n## 1. anyの使用を避ける\n\n`any`型の使用は型安全性を損なうため、可能な限り避けるべきです。代わりに`unknown`型やジェネリクスを活用しましょう。\n\n## 2. インターフェースと型エイリアスを適切に使い分ける\n\n```typescript\n// インターフェースの例（拡張可能）\ninterface User {\n  id: number;\n  name: string;\n}\n\n// 型エイリアスの例（ユニオン型やインターセクション型に適している）\ntype UserRole = 'admin' | 'user' | 'guest';\n```\n\n## 3. 厳格なnullチェックを有効にする\n\ntsconfig.jsonで`strictNullChecks: true`を設定することで、nullやundefinedに関する多くのバグを防ぐことができます。\n\n## 4. 型推論を活用する\n\nTypeScriptは優れた型推論機能を持っています。明らかな場合は型注釈を省略し、コードの可読性を高めましょう。ただし、関数の戻り値型などは明示的に指定することをお勧めします。"
+  }
+] 

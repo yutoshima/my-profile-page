@@ -1,0 +1,26 @@
+[
+  {
+    "platform": "twitter",
+    "href": "https://x.com/Yuto00579583",
+    "label": "X（Twitter）",
+    "handle": "@Yuto00579583"
+  },
+  {
+    "platform": "email",
+    "href": "mailto:yutoshima1234@gmail.com",
+    "label": "メール",
+    "handle": "yutoshima1234@gmail.com"
+  },
+  {
+    "platform": "github",
+    "href": "https://github.com/yutoshima",
+    "label": "GitHub",
+    "handle": "@yutoshima"
+  },
+  {
+    "platform": "facebook",
+    "href": "https://www.facebook.com/profile.php?id=100090928243991",
+    "label": "Facebook",
+    "handle": "島 悠人"
+  }
+] 
