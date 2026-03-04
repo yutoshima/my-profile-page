@@ -1,74 +1,50 @@
 [
   {
-    "name": "React",
-    "level": 90,
-    "description": "フロントエンド開発の主要フレームワーク",
-    "category": "フロントエンド"
+    "name": "Python",
+    "level": 80,
+    "description": "AI・データ処理の主要言語",
+    "category": "言語"
   },
   {
-    "name": "Next.js",
-    "level": 85,
-    "description": "Reactベースのフルスタックフレームワーク",
-    "category": "フロントエンド"
+    "name": "OpenAI API / LLM",
+    "level": 75,
+    "description": "GPT系モデルを活用したアプリ開発",
+    "category": "AI"
+  },
+  {
+    "name": "LangChain",
+    "level": 70,
+    "description": "LLMアプリケーションフレームワーク",
+    "category": "AI"
   },
   {
     "name": "TypeScript",
-    "level": 85,
+    "level": 70,
     "description": "型安全なJavaScript",
     "category": "言語"
   },
   {
-    "name": "JavaScript",
-    "level": 95,
-    "description": "Webフロントエンドの基本言語",
-    "category": "言語"
-  },
-  {
-    "name": "Tailwind CSS",
-    "level": 90,
-    "description": "ユーティリティファーストCSSフレームワーク",
+    "name": "Next.js / React",
+    "level": 70,
+    "description": "フロントエンド開発フレームワーク",
     "category": "フロントエンド"
   },
   {
-    "name": "Node.js",
-    "level": 80,
-    "description": "サーバーサイドJavaScript実行環境",
-    "category": "バックエンド"
-  },
-  {
-    "name": "Express",
-    "level": 75,
-    "description": "Node.jsのWebアプリケーションフレームワーク",
-    "category": "バックエンド"
-  },
-  {
-    "name": "MongoDB",
-    "level": 70,
-    "description": "NoSQLデータベース",
-    "category": "データベース"
-  },
-  {
-    "name": "GraphQL",
+    "name": "FastAPI",
     "level": 65,
-    "description": "APIのためのクエリ言語",
+    "description": "PythonのWebフレームワーク",
     "category": "バックエンド"
   },
   {
-    "name": "Git",
-    "level": 85,
-    "description": "バージョン管理システム",
+    "name": "Git / GitHub",
+    "level": 75,
+    "description": "バージョン管理・チーム開発",
     "category": "ツール"
   },
   {
     "name": "Docker",
-    "level": 70,
-    "description": "コンテナ化プラットフォーム",
-    "category": "DevOps"
-  },
-  {
-    "name": "AWS",
-    "level": 65,
-    "description": "クラウドサービス",
+    "level": 55,
+    "description": "コンテナ化・環境構築",
     "category": "DevOps"
   }
-] 
+]

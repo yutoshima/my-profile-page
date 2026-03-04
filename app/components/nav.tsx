@@ -60,36 +60,6 @@ export const Navigation = () => {
               経歴
             </Link>
             <Link
-              href="/blog"
-              className="duration-200 text-white/60 hover:text-white"
-            >
-              技術ブログ
-            </Link>
-            <Link
-              href="/certifications"
-              className="duration-200 text-white/60 hover:text-white"
-            >
-              資格・認定
-            </Link>
-            <Link
-              href="/testimonials"
-              className="duration-200 text-white/60 hover:text-white"
-            >
-              推薦文
-            </Link>
-            <Link
-              href="/process"
-              className="duration-200 text-white/60 hover:text-white"
-            >
-              開発プロセス
-            </Link>
-            <Link
-              href="/resume"
-              className="duration-200 text-white/60 hover:text-white"
-            >
-              レジュメ
-            </Link>
-            <Link
               href="/contact"
               className="duration-200 text-white/60 hover:text-white"
             >
@@ -136,41 +106,6 @@ export const Navigation = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 経歴
-              </Link>
-              <Link
-                href="/blog"
-                className="duration-200 text-white/60 hover:text-white py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                技術ブログ
-              </Link>
-              <Link
-                href="/certifications"
-                className="duration-200 text-white/60 hover:text-white py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                資格・認定
-              </Link>
-              <Link
-                href="/testimonials"
-                className="duration-200 text-white/60 hover:text-white py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                推薦文
-              </Link>
-              <Link
-                href="/process"
-                className="duration-200 text-white/60 hover:text-white py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                開発プロセス
-              </Link>
-              <Link
-                href="/resume"
-                className="duration-200 text-white/60 hover:text-white py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                レジュメ
               </Link>
               <Link
                 href="/contact"

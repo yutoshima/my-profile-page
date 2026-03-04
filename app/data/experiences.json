@@ -1,41 +1,26 @@
 [
   {
-    "id": "senior-frontend",
-    "title": "シニアフロントエンドエンジニア",
-    "company": "テック株式会社",
+    "id": "new-grad",
+    "title": "AIエンジニア",
+    "company": "（就職先）",
     "location": "東京",
-    "period": "2021年 - 現在",
+    "period": "2025年4月 - 現在",
     "description": [
-      "Reactを用いた大規模Webアプリケーションの開発・保守",
-      "チーム全体のコード品質向上のためのコードレビュー体制の構築",
-      "Next.jsを用いたパフォーマンス最適化とSEO対策",
-      "新人エンジニアのメンタリングと技術サポート"
+      "社会人1年目としてAIエンジニアリングに従事",
+      "LLM・生成AIを活用したプロダクト開発"
     ]
   },
   {
-    "id": "frontend-engineer",
-    "title": "フロントエンドエンジニア",
-    "company": "スタートアップX",
-    "location": "大阪",
-    "period": "2018年 - 2021年",
+    "id": "student-dev",
+    "title": "個人開発・学習",
+    "company": "大学在学中",
+    "location": "東京",
+    "period": "〜2025年3月",
     "description": [
-      "ユーザー向けダッシュボードのUI/UX設計と実装",
-      "マイクロフロントエンドアーキテクチャの導入",
-      "CI/CDパイプラインの構築とテスト自動化",
-      "TypeScriptとReactの導入によるコードベース改善"
-    ]
-  },
-  {
-    "id": "web-developer-intern",
-    "title": "Webデベロッパー（インターン）",
-    "company": "デジタルソリューションズ",
-    "location": "福岡",
-    "period": "2017年 - 2018年",
-    "description": [
-      "企業向けWebサイトのフロントエンド開発",
-      "レスポンシブデザインの実装と最適化",
-      "JavaScriptフレームワークを用いたSPAの開発",
-      "UXリサーチとA/Bテストの実施"
+      "LLM・生成AIを活用したWebアプリケーションの開発",
+      "Python / FastAPI / Next.js を用いたプロトタイプ開発",
+      "OpenAI API・LangChain を活用したAIアプリの実装",
+      "個人プロジェクトでのフルスタック開発経験"
     ]
   }
-] 
+]
