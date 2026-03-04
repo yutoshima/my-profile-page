@@ -27,14 +27,14 @@ export const Navigation = () => {
       <div
         className={`fixed inset-x-0 top-0 z-50 backdrop-blur duration-200 border-b ${
           isIntersecting
-            ? "bg-zinc-900/0 border-transparent"
-            : "bg-zinc-900/500 border-zinc-800"
+            ? "bg-brand/0 border-transparent"
+            : "bg-brand-darker/90 border-white/10"
         }`}
       >
         <div className="container flex items-center justify-between p-6 mx-auto">
           <Link
             href="/"
-            className="duration-200 text-zinc-300 hover:text-zinc-100"
+            className="duration-200 text-white/70 hover:text-white"
           >
             <ArrowLeft className="w-6 h-6" />
           </Link>
@@ -43,55 +43,55 @@ export const Navigation = () => {
           <div className="hidden md:flex justify-between gap-8">
             <Link
               href="/projects"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-white/60 hover:text-white"
             >
               作品紹介
             </Link>
             <Link
               href="/skills"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-white/60 hover:text-white"
             >
               スキル
             </Link>
             <Link
               href="/experience"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-white/60 hover:text-white"
             >
               経歴
             </Link>
             <Link
               href="/blog"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-white/60 hover:text-white"
             >
               技術ブログ
             </Link>
             <Link
               href="/certifications"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-white/60 hover:text-white"
             >
               資格・認定
             </Link>
             <Link
               href="/testimonials"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-white/60 hover:text-white"
             >
               推薦文
             </Link>
             <Link
               href="/process"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-white/60 hover:text-white"
             >
               開発プロセス
             </Link>
             <Link
               href="/resume"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-white/60 hover:text-white"
             >
               レジュメ
             </Link>
             <Link
               href="/contact"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-white/60 hover:text-white"
             >
               お問い合わせ
             </Link>
@@ -114,67 +114,67 @@ export const Navigation = () => {
 
         {/* モバイルメニュー */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-zinc-900/95 border-t border-zinc-800">
+          <div className="md:hidden bg-brand-darker/95 border-t border-white/10">
             <div className="container mx-auto py-4 px-6 flex flex-col space-y-4">
               <Link
                 href="/projects"
-                className="duration-200 text-zinc-400 hover:text-zinc-100 py-2"
+                className="duration-200 text-white/60 hover:text-white py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 作品紹介
               </Link>
               <Link
                 href="/skills"
-                className="duration-200 text-zinc-400 hover:text-zinc-100 py-2"
+                className="duration-200 text-white/60 hover:text-white py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 スキル
               </Link>
               <Link
                 href="/experience"
-                className="duration-200 text-zinc-400 hover:text-zinc-100 py-2"
+                className="duration-200 text-white/60 hover:text-white py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 経歴
               </Link>
               <Link
                 href="/blog"
-                className="duration-200 text-zinc-400 hover:text-zinc-100 py-2"
+                className="duration-200 text-white/60 hover:text-white py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 技術ブログ
               </Link>
               <Link
                 href="/certifications"
-                className="duration-200 text-zinc-400 hover:text-zinc-100 py-2"
+                className="duration-200 text-white/60 hover:text-white py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 資格・認定
               </Link>
               <Link
                 href="/testimonials"
-                className="duration-200 text-zinc-400 hover:text-zinc-100 py-2"
+                className="duration-200 text-white/60 hover:text-white py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 推薦文
               </Link>
               <Link
                 href="/process"
-                className="duration-200 text-zinc-400 hover:text-zinc-100 py-2"
+                className="duration-200 text-white/60 hover:text-white py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 開発プロセス
               </Link>
               <Link
                 href="/resume"
-                className="duration-200 text-zinc-400 hover:text-zinc-100 py-2"
+                className="duration-200 text-white/60 hover:text-white py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 レジュメ
               </Link>
               <Link
                 href="/contact"
-                className="duration-200 text-zinc-400 hover:text-zinc-100 py-2"
+                className="duration-200 text-white/60 hover:text-white py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 お問い合わせ
