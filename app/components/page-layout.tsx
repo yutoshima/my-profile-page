@@ -1,5 +1,6 @@
 import { Navigation } from "./nav";
 import { Footer } from "./footer";
+import { Container } from "./container";
 import type { PropsWithChildren } from "react";
 
 type Props = PropsWithChildren<{
@@ -12,7 +13,7 @@ export const PageLayout = ({ title, description, label, children }: Props) => {
   return (
     <div className="bg-brand min-h-screen">
       <Navigation />
-      <div className="max-w-4xl mx-auto px-4 sm:px-8 pt-32 pb-12">
+      <Container className="pt-32 pb-12">
         {label && (
           <p className="text-xs uppercase tracking-[0.25em] text-white/40 mb-3">{label}</p>
         )}
@@ -22,7 +23,7 @@ export const PageLayout = ({ title, description, label, children }: Props) => {
         <p className="text-white/60 text-left mb-12">{description}</p>
         <div className="w-full h-px bg-white/15 mb-12" />
         {children}
-      </div>
+      </Container>
       <Footer />
     </div>
   );

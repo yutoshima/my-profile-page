@@ -2,6 +2,7 @@ import Link from "next/link";
 import { socials } from "./data/socials";
 import { Navigation } from "./components/nav";
 import { Footer } from "./components/footer";
+import { Container } from "./components/container";
 
 const sections = [
   { title: "作品紹介", href: "/projects", description: "学生時代・個人開発で作ったプロジェクト" },
@@ -74,8 +75,8 @@ export default function Home() {
       </section>
 
       {/* Contents */}
-      <section className="bg-surface px-4 sm:px-8 py-20">
-        <div className="max-w-4xl mx-auto">
+      <section className="bg-surface py-20">
+        <Container>
           <p className="text-xs uppercase tracking-[0.25em] text-white/40 text-center mb-12">
             Contents
           </p>
@@ -94,7 +95,7 @@ export default function Home() {
               </Link>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
       <Footer />

@@ -1,6 +1,7 @@
 "use client";
 import { ArrowLeft, Menu, X } from "lucide-react";
 import Link from "next/link";
+import { Container } from "./container";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -36,7 +37,7 @@ export const Navigation = () => {
             : "bg-brand border-white/10"
         }`}
       >
-        <div className="max-w-4xl flex items-center justify-between px-4 sm:px-8 py-6 mx-auto">
+        <Container className="flex items-center justify-between py-6">
           {isHome ? (
             <span className="font-display font-bold text-white tracking-widest text-sm">
               YS
@@ -73,12 +74,12 @@ export const Navigation = () => {
               <Menu className="w-6 h-6" />
             )}
           </button>
-        </div>
+        </Container>
 
         {/* モバイルメニュー */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-brand border-t border-white/10">
-            <div className="max-w-4xl mx-auto py-4 px-4 sm:px-8 flex flex-col space-y-4">
+            <Container className="py-4 flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -89,7 +90,7 @@ export const Navigation = () => {
                   {link.label}
                 </Link>
               ))}
-            </div>
+            </Container>
           </div>
         )}
       </div>
