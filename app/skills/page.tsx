@@ -5,7 +5,7 @@ import skillsData from "../data/skills.json";
 import profileData from "../data/profile.json";
 
 export const metadata: Metadata = {
-  title: "スキル | Yuto Shima",
+  title: "スキル",
   description: "島 悠人のスキルセット",
 };
 

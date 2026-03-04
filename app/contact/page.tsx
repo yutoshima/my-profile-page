@@ -7,7 +7,7 @@ import { socials } from "../data/socials";
 import profileData from "../data/profile.json";
 
 export const metadata: Metadata = {
-  title: "お問い合わせ | Yuto Shima",
+  title: "お問い合わせ",
   description: "島 悠人へのお問い合わせ",
 };
 

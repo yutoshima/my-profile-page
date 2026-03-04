@@ -6,7 +6,7 @@ import projectsData from "../data/projects.json";
 import profileData from "../data/profile.json";
 
 export const metadata: Metadata = {
-  title: "作品紹介 | ポートフォリオ",
+  title: "作品紹介",
   description: "これまでに取り組んできた個人プロジェクトの紹介",
 };
 

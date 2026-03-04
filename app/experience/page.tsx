@@ -5,7 +5,7 @@ import experiencesData from "../data/experiences.json";
 import profileData from "../data/profile.json";
 
 export const metadata: Metadata = {
-  title: "経歴 | Yuto Shima",
+  title: "経歴",
   description: "島 悠人の経歴",
 };
 
