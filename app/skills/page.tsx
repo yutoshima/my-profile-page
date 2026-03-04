@@ -20,7 +20,7 @@ export default function SkillsPage() {
       {categories.map((category) => (
         <div key={category} className="mb-12">
           <h3 className="text-xl font-bold text-white mb-6">{category}</h3>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="flex flex-col gap-4">
             {skillsData
               .filter((s) => s.category === category)
               .map((skill) => (
