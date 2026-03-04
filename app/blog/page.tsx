@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import blogData from "../data/blog.json";
 
 interface BlogPost {
   id: string;
@@ -15,45 +15,17 @@ interface BlogPost {
   content: string;
 }
 
+const posts: BlogPost[] = blogData;
+
+const formatDate = (dateString: string) => {
+  return new Date(dateString).toLocaleDateString("ja-JP", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+};
+
 export default function BlogPage() {
-  const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('/api/blog');
-        const data = await response.json();
-        setPosts(data);
-      } catch (error) {
-        console.error('ブログデータの取得に失敗しました:', error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('ja-JP', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
-  };
-
-  if (isLoading) {
-    return (
-      <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 min-h-screen">
-        <Navigation />
-        <div className="container mx-auto px-4 pt-24 pb-12 flex items-center justify-center">
-          <div className="text-white">読み込み中...</div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 min-h-screen">
       <Navigation />
@@ -75,19 +47,19 @@ export default function BlogPage() {
             >
               <Card>
                 <div className="p-6">
-                  <div className="flex justify-between items-start mb-4">
-                    <h2 className="text-2xl font-bold text-white mb-2">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-4">
+                    <h2 className="text-2xl font-bold text-white">
                       {post.title}
                     </h2>
-                    <span className="text-sm text-zinc-500">
+                    <span className="text-sm text-zinc-500 whitespace-nowrap">
                       {formatDate(post.date)}
                     </span>
                   </div>
                   <p className="text-zinc-300 mb-4">{post.summary}</p>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {post.tags.map(tag => (
-                      <span 
+                    {post.tags.map((tag) => (
+                      <span
                         key={tag}
                         className="px-3 py-1 bg-zinc-800 text-zinc-300 text-xs rounded-full"
                       >
@@ -95,8 +67,8 @@ export default function BlogPage() {
                       </span>
                     ))}
                   </div>
-                  
-                  <button 
+
+                  <button
                     type="button"
                     className="mt-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded transition-colors"
                   >
@@ -110,4 +82,4 @@ export default function BlogPage() {
       </div>
     </div>
   );
-} 
+}

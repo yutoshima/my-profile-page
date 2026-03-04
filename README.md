@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div align="center">
     <h1 align="center">Yuto Shima Portfolio</h1>
 
@@ -36,6 +35,3 @@ npm run dev
 ## ライセンス
 
 MITライセンスの下で公開されています。詳細は[LICENSE](LICENSE)ファイルをご覧ください。
-=======
-# my-profile-page
->>>>>>> e73830e6a568e41d7b0448ca881555fd15a2f9a1

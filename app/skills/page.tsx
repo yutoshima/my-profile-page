@@ -1,9 +1,11 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { motion } from "framer-motion";
+import skillsData from "../data/skills.json";
+import profileData from "../data/profile.json";
 
 interface Skill {
   name: string;
@@ -12,63 +14,19 @@ interface Skill {
   category: string;
 }
 
-interface ProfileData {
-  headings: {
-    skills: string;
-  };
-  descriptions: {
-    skills: string;
-  };
-}
+const skills: Skill[] = skillsData;
+const categories = Array.from(new Set(skills.map((skill) => skill.category)));
 
 export default function SkillsPage() {
-  const [skills, setSkills] = useState<Skill[]>([]);
-  const [profile, setProfile] = useState<ProfileData | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const skillsResponse = await fetch('/api/skills');
-        const skillsData = await skillsResponse.json();
-        setSkills(skillsData);
-
-        const profileResponse = await fetch('/api/profile');
-        const profileData = await profileResponse.json();
-        setProfile(profileData);
-      } catch (error) {
-        console.error('データの取得に失敗しました:', error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  if (isLoading) {
-    return (
-      <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 min-h-screen">
-        <Navigation />
-        <div className="container mx-auto px-4 pt-24 pb-12 flex items-center justify-center">
-          <div className="text-white">読み込み中...</div>
-        </div>
-      </div>
-    );
-  }
-
-  const categories = Array.from(new Set(skills.map((skill) => skill.category)));
-
   return (
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 min-h-screen">
       <Navigation />
       <div className="container mx-auto px-4 pt-24 pb-12 sm:px-6 md:pb-16 lg:pb-20">
         <h1 className="font-bold text-3xl md:text-5xl text-center mb-6 text-white">
-          {profile?.headings?.skills || "スキルセット"}
+          {profileData.headings.skills}
         </h1>
         <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-12">
-          {profile?.descriptions?.skills || 
-          "私が習得したスキルと技術スタックです。常に新しい技術を学び、スキルを向上させています。"}
+          {profileData.descriptions.skills}
         </p>
 
         <div className="w-full h-px bg-zinc-800 mb-12" />

@@ -1,9 +1,11 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { motion } from "framer-motion";
+import experiencesData from "../data/experiences.json";
+import profileData from "../data/profile.json";
 
 interface Experience {
   id: string;
@@ -14,61 +16,18 @@ interface Experience {
   description: string[];
 }
 
-interface ProfileData {
-  headings: {
-    experience: string;
-  };
-  descriptions: {
-    experience: string;
-  };
-}
+const experiences: Experience[] = experiencesData;
 
 export default function ExperiencePage() {
-  const [experiences, setExperiences] = useState<Experience[]>([]);
-  const [profile, setProfile] = useState<ProfileData | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const experiencesResponse = await fetch('/api/experiences');
-        const experiencesData = await experiencesResponse.json();
-        setExperiences(experiencesData);
-
-        const profileResponse = await fetch('/api/profile');
-        const profileData = await profileResponse.json();
-        setProfile(profileData);
-      } catch (error) {
-        console.error('データの取得に失敗しました:', error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  if (isLoading) {
-    return (
-      <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 min-h-screen">
-        <Navigation />
-        <div className="container mx-auto px-4 pt-24 pb-12 flex items-center justify-center">
-          <div className="text-white">読み込み中...</div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 min-h-screen">
       <Navigation />
       <div className="container mx-auto px-4 pt-24 pb-12">
         <h1 className="font-bold text-3xl md:text-5xl text-center mb-12 text-white">
-          {profile?.headings?.experience || "経歴"}
+          {profileData.headings.experience}
         </h1>
         <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-12">
-          {profile?.descriptions?.experience || 
-          "これまでの私の職務経歴と経験をご紹介します。様々なプロジェクトと役割を通じて、フロントエンド開発の専門知識を培ってきました。"}
+          {profileData.descriptions.experience}
         </p>
 
         <div className="max-w-3xl mx-auto">

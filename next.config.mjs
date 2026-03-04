@@ -6,13 +6,11 @@ const nextConfig = {
   experimental: {
     mdxRs: true,
   },
-  // APIルートを使用するため静的エクスポートを無効化
-  // output: process.env.NODE_ENV === "production" ? "export" : undefined,
+  output: "export",
   images: {
     unoptimized: true,
   },
-  // GitHub PagesのリポジトリURLに合わせてbasePath設定
-  basePath: process.env.GITHUB_ACTIONS ? "/portfolio-site" : "",
+  basePath: process.env.GITHUB_ACTIONS ? "/my-profile-app" : "",
   trailingSlash: true,
 };
 

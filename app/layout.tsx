@@ -5,18 +5,18 @@ import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yutoshima.github.io/my-profile-app"),
+  metadataBase: new URL("https://yutoshima.github.io/my-profile-page"),
   title: {
-    default: "Yuto Shima | Portfolio",
+    default: "Yuto Shima | Frontend Engineer",
     template: "%s | Yuto Shima",
   },
   description:
-    "Yuto Shima's professional portfolio showcasing projects and skills",
+    "島 悠人のポートフォリオサイト。フロントエンドエンジニアとして培った技術とプロジェクトを紹介しています。",
   openGraph: {
-    title: "Yuto Shima | Portfolio",
+    title: "Yuto Shima | Frontend Engineer",
     description:
-      "Yuto Shima's professional portfolio showcasing projects and skills",
-    url: "https://yutoshima.github.io/my-profile-app",
+      "島 悠人のポートフォリオサイト。フロントエンドエンジニアとして培った技術とプロジェクトを紹介しています。",
+    url: "https://yutoshima.github.io/my-profile-page",
     siteName: "Yuto Shima Portfolio",
     images: [
       {
