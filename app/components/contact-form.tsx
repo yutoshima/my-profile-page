@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, type ChangeEvent, type FormEvent } from "react";
 import { Send, Loader2 } from "lucide-react";
 import { Card } from "./card";
 
@@ -18,12 +18,12 @@ export const ContactForm = () => {
   const [submitStatus, setSubmitStatus] = useState<null | "success" | "error">(null);
   const hiddenFormRef = useRef<HTMLFormElement>(null);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     try {

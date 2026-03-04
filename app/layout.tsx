@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         height: 1080,
       },
     ],
-    locale: "en-US",
+    locale: "ja_JP",
     type: "website",
   },
   robots: {
@@ -64,11 +64,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
         <Analytics />
       </head>
-      <body
-        className={`bg-brand ${
-          process.env.NODE_ENV === "development" ? "debug-screens" : ""
-        }`}
-      >
+      <body className="bg-brand">
         {children}
       </body>
     </html>
