@@ -40,7 +40,7 @@ const formatDate = (dateString: string) => {
 
 export default function ResumePage() {
   return (
-    <div className="bg-brand-dark min-h-screen">
+    <div className="bg-brand min-h-screen">
       <Navigation />
       <div className="container mx-auto px-4 pt-24 pb-12">
         <div className="max-w-5xl mx-auto">
@@ -53,13 +53,13 @@ export default function ResumePage() {
             <h1 className="font-bold text-3xl md:text-5xl mb-3 text-white">
               {resume.basics.name}の経歴書
             </h1>
-            <p className="text-zinc-400 max-w-3xl mx-auto mb-6">
+            <p className="text-white/60 max-w-3xl mx-auto mb-6">
               {resume.basics.summary}
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-6">
               <a
                 href={resume.fileFormat.pdfUrl}
-                className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-md transition-colors"
+                className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-white px-5 py-2.5 rounded-md transition-colors"
                 download
               >
                 <Download size={18} />
@@ -67,7 +67,7 @@ export default function ResumePage() {
               </a>
               <a
                 href={resume.fileFormat.docxUrl}
-                className="inline-flex items-center gap-2 bg-zinc-700 hover:bg-zinc-600 text-white px-5 py-2.5 rounded-md transition-colors"
+                className="inline-flex items-center gap-2 bg-white/20 hover:bg-zinc-600 text-white px-5 py-2.5 rounded-md transition-colors"
                 download
               >
                 <Download size={18} />
@@ -93,21 +93,21 @@ export default function ResumePage() {
                     <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
                       <div>
                         <h3 className="text-xl font-bold text-white">{work.position}</h3>
-                        <div className="flex items-center gap-2 text-zinc-400">
+                        <div className="flex items-center gap-2 text-white/60">
                           <span>{work.company}</span>
                           <a href={work.website} target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-300" aria-label={`${work.company}のウェブサイト`}>
                             <ExternalLink size={14} />
                           </a>
                         </div>
                       </div>
-                      <div className="text-sm text-zinc-500">
+                      <div className="text-sm text-white/50">
                         {formatDate(work.startDate)} - {formatDate(work.endDate)}
                       </div>
                     </div>
-                    <p className="text-zinc-300 mb-4">{work.summary}</p>
+                    <p className="text-white/80 mb-4">{work.summary}</p>
                     <ul className="space-y-2">
                       {work.highlights.map((highlight) => (
-                        <li key={highlight.substring(0, 20)} className="flex items-start gap-2 text-zinc-400">
+                        <li key={highlight.substring(0, 20)} className="flex items-start gap-2 text-white/60">
                           <span className="mt-1 flex-shrink-0 text-indigo-500">•</span>
                           <span>{highlight}</span>
                         </li>
@@ -136,18 +136,18 @@ export default function ResumePage() {
                     <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
                       <div>
                         <h3 className="text-xl font-bold text-white">{edu.institution}</h3>
-                        <div className="text-zinc-400">{edu.studyType} - {edu.area}</div>
+                        <div className="text-white/60">{edu.studyType} - {edu.area}</div>
                       </div>
-                      <div className="text-sm text-zinc-500">
+                      <div className="text-sm text-white/50">
                         {formatDate(edu.startDate)} - {formatDate(edu.endDate)}
                       </div>
                     </div>
-                    {edu.gpa && <div className="mb-4 text-zinc-300">GPA: {edu.gpa}</div>}
+                    {edu.gpa && <div className="mb-4 text-white/80">GPA: {edu.gpa}</div>}
                     <div className="mt-4">
-                      <h4 className="text-sm font-medium text-zinc-300 mb-2">主な履修科目:</h4>
+                      <h4 className="text-sm font-medium text-white/80 mb-2">主な履修科目:</h4>
                       <div className="flex flex-wrap gap-2">
                         {edu.courses.map((course) => (
-                          <span key={course} className="px-3 py-1 bg-zinc-800 text-zinc-300 text-xs rounded-full">{course}</span>
+                          <span key={course} className="px-3 py-1 bg-white/10 text-white/80 text-xs rounded-full">{course}</span>
                         ))}
                       </div>
                     </div>
@@ -173,11 +173,11 @@ export default function ResumePage() {
                   <div className="p-6">
                     <div className="flex justify-between items-center mb-4">
                       <h3 className="text-lg font-bold text-white">{skill.name}</h3>
-                      <span className="px-3 py-1 bg-indigo-600/30 text-indigo-300 text-xs rounded-full">{skill.level}</span>
+                      <span className="px-3 py-1 bg-white/30 text-indigo-300 text-xs rounded-full">{skill.level}</span>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {skill.keywords.map((keyword) => (
-                        <span key={keyword} className="px-3 py-1 bg-zinc-800 text-zinc-300 text-xs rounded-full">{keyword}</span>
+                        <span key={keyword} className="px-3 py-1 bg-white/10 text-white/80 text-xs rounded-full">{keyword}</span>
                       ))}
                     </div>
                   </div>
@@ -200,8 +200,8 @@ export default function ResumePage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {resume.languages.map((lang) => (
                     <div key={`lang-${lang.language}`} className="flex justify-between items-center">
-                      <span className="text-zinc-300">{lang.language}</span>
-                      <span className="px-3 py-1 bg-zinc-800 text-zinc-300 text-xs rounded-full">{lang.fluency}</span>
+                      <span className="text-white/80">{lang.language}</span>
+                      <span className="px-3 py-1 bg-white/10 text-white/80 text-xs rounded-full">{lang.fluency}</span>
                     </div>
                   ))}
                 </div>

@@ -79,13 +79,13 @@ const getIcon = (iconName: string) => {
 
 export default function ProcessPage() {
   return (
-    <div className="bg-brand-dark min-h-screen">
+    <div className="bg-brand min-h-screen">
       <Navigation />
       <div className="container mx-auto px-4 pt-24 pb-12">
         <h1 className="font-bold text-3xl md:text-5xl text-center mb-6 text-white">
           {process.title}
         </h1>
-        <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-12">
+        <p className="text-white/60 text-center max-w-3xl mx-auto mb-12">
           {process.description}
         </p>
 
@@ -104,7 +104,7 @@ export default function ProcessPage() {
                 <Card>
                   <div className="p-6 md:p-8 flex flex-col md:flex-row gap-6">
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 rounded-full bg-zinc-800 flex items-center justify-center">
+                      <div className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center">
                         {getIcon(stage.icon)}
                       </div>
                     </div>
@@ -112,16 +112,16 @@ export default function ProcessPage() {
                       <h3 className="text-xl font-bold text-white mb-2">
                         {stage.title}
                       </h3>
-                      <p className="text-zinc-300 mb-4">{stage.description}</p>
-                      <div className="bg-zinc-800/50 rounded-lg p-4">
-                        <h4 className="text-sm font-medium text-zinc-300 mb-3">
+                      <p className="text-white/80 mb-4">{stage.description}</p>
+                      <div className="bg-white/10/50 rounded-lg p-4">
+                        <h4 className="text-sm font-medium text-white/80 mb-3">
                           主なタスク:
                         </h4>
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2">
                           {stage.tasks.map((task) => (
                             <li
                               key={task.substring(0, 20)}
-                              className="flex items-start gap-2 text-zinc-400"
+                              className="flex items-start gap-2 text-white/60"
                             >
                               <span className="mt-1 flex-shrink-0 text-indigo-500">✓</span>
                               <span>{task}</span>
@@ -152,7 +152,7 @@ export default function ProcessPage() {
                 <Card>
                   <div className="p-6">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 rounded-full bg-indigo-600/20 flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                         <span className="text-indigo-400 font-bold">
                           {index + 1}
                         </span>
@@ -161,7 +161,7 @@ export default function ProcessPage() {
                         {principle.title}
                       </h3>
                     </div>
-                    <p className="text-zinc-300">{principle.description}</p>
+                    <p className="text-white/80">{principle.description}</p>
                   </div>
                 </Card>
               </motion.div>

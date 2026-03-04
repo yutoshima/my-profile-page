@@ -19,13 +19,13 @@ const testimonials: Testimonial[] = testimonialsData;
 
 export default function TestimonialsPage() {
   return (
-    <div className="bg-brand-dark min-h-screen">
+    <div className="bg-brand min-h-screen">
       <Navigation />
       <div className="container mx-auto px-4 pt-24 pb-12">
         <h1 className="font-bold text-3xl md:text-5xl text-center mb-6 text-white">
           推薦文
         </h1>
-        <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-12">
+        <p className="text-white/60 text-center max-w-3xl mx-auto mb-12">
           これまで一緒に働いた方々からいただいた評価です。
         </p>
 
@@ -39,18 +39,18 @@ export default function TestimonialsPage() {
             >
               <Card>
                 <div className="p-8 relative">
-                  <div className="absolute top-8 left-8 w-10 h-10 flex items-center justify-center bg-indigo-600/20 rounded-full">
+                  <div className="absolute top-8 left-8 w-10 h-10 flex items-center justify-center bg-white/20 rounded-full">
                     <Quote className="w-5 h-5 text-indigo-400" />
                   </div>
 
                   <div className="pl-16">
-                    <blockquote className="text-zinc-300 text-lg italic mb-6 leading-relaxed">
+                    <blockquote className="text-white/80 text-lg italic mb-6 leading-relaxed">
                       &ldquo;{testimonial.text}&rdquo;
                     </blockquote>
 
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-full overflow-hidden bg-zinc-800 flex items-center justify-center">
-                        <span className="text-zinc-400 text-xl font-bold">
+                      <div className="w-12 h-12 rounded-full overflow-hidden bg-white/10 flex items-center justify-center">
+                        <span className="text-white/60 text-xl font-bold">
                           {testimonial.name.charAt(0)}
                         </span>
                       </div>
@@ -59,7 +59,7 @@ export default function TestimonialsPage() {
                         <div className="font-semibold text-white">
                           {testimonial.name}
                         </div>
-                        <div className="text-zinc-400 text-sm">
+                        <div className="text-white/60 text-sm">
                           {testimonial.position}
                         </div>
                       </div>

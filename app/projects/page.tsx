@@ -161,17 +161,17 @@ export default function ProjectsPage() {
   const otherProjects = projects.filter((project) => !project.featured);
 
   return (
-    <div className="bg-brand-dark min-h-screen">
+    <div className="bg-brand min-h-screen">
       <Navigation />
       <div className="container mx-auto px-4 pt-24 pb-12 sm:px-6 md:pb-16 lg:pb-20">
         <h1 className="font-bold text-3xl md:text-5xl text-center mb-6 text-white">
           作品紹介
         </h1>
-        <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-12">
+        <p className="text-white/60 text-center max-w-3xl mx-auto mb-12">
           これまでに取り組んできた個人プロジェクトと実務開発案件の一部をご紹介します。
           各プロジェクトで習得した技術と解決した課題に焦点を当てています。
         </p>
-        <div className="w-full h-px bg-zinc-800 mb-12" />
+        <div className="w-full h-px bg-white/10 mb-12" />
 
         {/* 特集プロジェクト */}
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 mb-12">
@@ -187,7 +187,7 @@ export default function ProjectsPage() {
                 </div>
               )}
               <div className="flex items-center justify-between gap-2">
-                <div className="text-xs text-zinc-100">
+                <div className="text-xs text-white">
                   <time dateTime={featuredProjects[0].date}>
                     {new Date(featuredProjects[0].date).toLocaleDateString(
                       "ja-JP",
@@ -200,7 +200,7 @@ export default function ProjectsPage() {
                       href={featuredProjects[0].githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-zinc-400 hover:text-zinc-100"
+                      className="text-white/60 hover:text-white"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +220,7 @@ export default function ProjectsPage() {
                       href={featuredProjects[0].projectUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-zinc-400 hover:text-zinc-100"
+                      className="text-white/60 hover:text-white"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -240,17 +240,17 @@ export default function ProjectsPage() {
                 </div>
               </div>
 
-              <h2 className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display">
+              <h2 className="mt-4 text-3xl font-bold text-white group-hover:text-white sm:text-4xl font-display">
                 {featuredProjects[0].title}
               </h2>
-              <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+              <p className="mt-4 leading-8 duration-150 text-white/60 group-hover:text-white/80">
                 {featuredProjects[0].longDescription}
               </p>
               <div className="flex flex-wrap gap-2 mt-4">
                 {featuredProjects[0].technologies.map((tech) => (
                   <span
                     key={`${featuredProjects[0].id}-${tech}`}
-                    className="px-2 py-1 text-xs text-zinc-300 bg-zinc-800 rounded-full"
+                    className="px-2 py-1 text-xs text-white/80 bg-white/10 rounded-full"
                   >
                     {tech}
                   </span>
@@ -259,12 +259,12 @@ export default function ProjectsPage() {
             </article>
           </Card>
 
-          <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0">
+          <div className="flex flex-col w-full gap-8 mx-auto border-t border-white/10 lg:mx-0 lg:border-t-0">
             {featuredProjects.slice(1).map((project) => (
               <Card key={`project-${project.id}`}>
                 <article className="relative w-full h-full p-4 md:p-8">
                   <div className="flex items-center justify-between gap-2">
-                    <div className="text-xs text-zinc-100">
+                    <div className="text-xs text-white">
                       <time dateTime={project.date}>
                         {new Date(project.date).toLocaleDateString("ja-JP")}
                       </time>
@@ -275,7 +275,7 @@ export default function ProjectsPage() {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-zinc-400 hover:text-zinc-100"
+                          className="text-white/60 hover:text-white"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +297,7 @@ export default function ProjectsPage() {
                           href={project.projectUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-zinc-400 hover:text-zinc-100"
+                          className="text-white/60 hover:text-white"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -316,23 +316,23 @@ export default function ProjectsPage() {
                       )}
                     </div>
                   </div>
-                  <h2 className="mt-4 text-xl font-bold text-zinc-100 group-hover:text-white font-display">
+                  <h2 className="mt-4 text-xl font-bold text-white group-hover:text-white font-display">
                     {project.title}
                   </h2>
-                  <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                  <p className="mt-4 leading-8 duration-150 text-white/60 group-hover:text-white/80">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     {project.technologies.slice(0, 4).map((tech) => (
                       <span
                         key={`${project.id}-${tech}`}
-                        className="px-2 py-1 text-xs text-zinc-300 bg-zinc-800 rounded-full"
+                        className="px-2 py-1 text-xs text-white/80 bg-white/10 rounded-full"
                       >
                         {tech}
                       </span>
                     ))}
                     {project.technologies.length > 4 && (
-                      <span className="px-2 py-1 text-xs text-zinc-300 bg-zinc-800 rounded-full">
+                      <span className="px-2 py-1 text-xs text-white/80 bg-white/10 rounded-full">
                         +{project.technologies.length - 4}
                       </span>
                     )}
@@ -342,7 +342,7 @@ export default function ProjectsPage() {
             ))}
           </div>
         </div>
-        <div className="w-full h-px mb-12 md:block bg-zinc-800" />
+        <div className="w-full h-px mb-12 md:block bg-white/10" />
 
         {/* その他のプロジェクト */}
         <h2 className="font-bold text-2xl md:text-3xl mb-6 text-white">
@@ -353,7 +353,7 @@ export default function ProjectsPage() {
             <Card key={`project-${project.id}`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
-                  <div className="text-xs text-zinc-100">
+                  <div className="text-xs text-white">
                     <time dateTime={project.date}>
                       {new Date(project.date).toLocaleDateString("ja-JP")}
                     </time>
@@ -364,7 +364,7 @@ export default function ProjectsPage() {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-zinc-400 hover:text-zinc-100"
+                        className="text-white/60 hover:text-white"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -386,7 +386,7 @@ export default function ProjectsPage() {
                         href={project.projectUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-zinc-400 hover:text-zinc-100"
+                        className="text-white/60 hover:text-white"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -405,23 +405,23 @@ export default function ProjectsPage() {
                     )}
                   </div>
                 </div>
-                <h2 className="mt-4 text-xl font-bold text-zinc-100 group-hover:text-white font-display">
+                <h2 className="mt-4 text-xl font-bold text-white group-hover:text-white font-display">
                   {project.title}
                 </h2>
-                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                <p className="mt-4 leading-8 duration-150 text-white/60 group-hover:text-white/80">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   {project.technologies.slice(0, 3).map((tech) => (
                     <span
                       key={`${project.id}-${tech}`}
-                      className="px-2 py-1 text-xs text-zinc-300 bg-zinc-800 rounded-full"
+                      className="px-2 py-1 text-xs text-white/80 bg-white/10 rounded-full"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 3 && (
-                    <span className="px-2 py-1 text-xs text-zinc-300 bg-zinc-800 rounded-full">
+                    <span className="px-2 py-1 text-xs text-white/80 bg-white/10 rounded-full">
                       +{project.technologies.length - 3}
                     </span>
                   )}

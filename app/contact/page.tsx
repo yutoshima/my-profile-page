@@ -108,17 +108,17 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-brand-dark min-h-screen">
+    <div className="bg-brand min-h-screen">
       <Navigation />
       <div className="container mx-auto px-4 pt-24 pb-12 sm:px-6 md:pb-16 lg:pb-20">
         <h1 className="font-bold text-3xl md:text-5xl text-center mb-6 text-white">
           お問い合わせ
         </h1>
-        <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-12">
+        <p className="text-white/60 text-center max-w-3xl mx-auto mb-12">
           お仕事のご依頼やご質問など、お気軽にご連絡ください。フォームまたはSNSからご連絡いただけます。
         </p>
 
-        <div className="w-full h-px bg-zinc-800 mb-12" />
+        <div className="w-full h-px bg-white/10 mb-12" />
 
         {/* 非表示のGoogleフォーム */}
         <div style={{ display: 'none' }}>
@@ -144,7 +144,7 @@ export default function Contact() {
           >
             <Card>
               <div className="p-8">
-                <h3 className="text-xl font-bold text-zinc-100 mb-6">
+                <h3 className="text-xl font-bold text-white mb-6">
                   メッセージを送信
                 </h3>
 
@@ -168,10 +168,10 @@ export default function Contact() {
                         />
                       </svg>
                     </div>
-                    <h4 className="text-xl font-medium text-zinc-100 mb-2">
+                    <h4 className="text-xl font-medium text-white mb-2">
                       送信完了
                     </h4>
-                    <p className="text-zinc-400">
+                    <p className="text-white/60">
                       メッセージを受け付けました。近日中にご連絡いたします。
                     </p>
                   </div>
@@ -185,7 +185,7 @@ export default function Contact() {
                       <div>
                         <label
                           htmlFor="name"
-                          className="block text-sm font-medium text-zinc-400 mb-1"
+                          className="block text-sm font-medium text-white/60 mb-1"
                         >
                           お名前
                         </label>
@@ -196,7 +196,7 @@ export default function Contact() {
                           required
                           value={formData.name}
                           onChange={handleChange}
-                          className="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-md text-zinc-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                          className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-white/50"
                           disabled={isSubmitting}
                         />
                       </div>
@@ -204,7 +204,7 @@ export default function Contact() {
                       <div>
                         <label
                           htmlFor="email"
-                          className="block text-sm font-medium text-zinc-400 mb-1"
+                          className="block text-sm font-medium text-white/60 mb-1"
                         >
                           メールアドレス
                         </label>
@@ -215,7 +215,7 @@ export default function Contact() {
                           required
                           value={formData.email}
                           onChange={handleChange}
-                          className="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-md text-zinc-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                          className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-white/50"
                           disabled={isSubmitting}
                         />
                       </div>
@@ -223,7 +223,7 @@ export default function Contact() {
                       <div>
                         <label
                           htmlFor="message"
-                          className="block text-sm font-medium text-zinc-400 mb-1"
+                          className="block text-sm font-medium text-white/60 mb-1"
                         >
                           メッセージ
                         </label>
@@ -234,7 +234,7 @@ export default function Contact() {
                           required
                           value={formData.message}
                           onChange={handleChange}
-                          className="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-md text-zinc-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                          className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-white/50"
                           disabled={isSubmitting}
                         />
                       </div>
@@ -242,7 +242,7 @@ export default function Contact() {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full flex items-center justify-center px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
+                        className="w-full flex items-center justify-center px-4 py-2 bg-white text-brand rounded-md hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/50 transition-colors"
                       >
                         {isSubmitting ? (
                           <>
@@ -263,7 +263,7 @@ export default function Contact() {
                         </p>
                       )}
                     </form>
-                    <p className="text-xs text-zinc-500 mt-4 text-center">
+                    <p className="text-xs text-white/50 mt-4 text-center">
                       このフォームはGoogleフォームを利用しています
                     </p>
                   </>
@@ -274,7 +274,7 @@ export default function Contact() {
 
           {/* ソーシャルリンク */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-zinc-100 mb-4">
+            <h3 className="text-xl font-bold text-white mb-4">
               SNSでつながる
             </h3>
             <div className="grid gap-4">
@@ -291,14 +291,14 @@ export default function Contact() {
                       target="_blank"
                       className="p-4 relative flex items-center gap-4 duration-700 group"
                     >
-                      <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200">
+                      <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-white/90 group-hover:text-white group-hover:bg-brand-dark border-white/40 bg-brand-dark group-hover:border-zinc-200">
                         {s.icon}
                       </span>
                       <div className="flex flex-col">
-                        <span className="text-lg font-medium duration-150 text-zinc-200 group-hover:text-white font-display">
+                        <span className="text-lg font-medium duration-150 text-white/90 group-hover:text-white font-display">
                           {s.handle}
                         </span>
-                        <span className="text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                        <span className="text-sm duration-1000 text-white/60 group-hover:text-white/90">
                           {s.label}
                         </span>
                       </div>

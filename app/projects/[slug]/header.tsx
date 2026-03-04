@@ -43,12 +43,12 @@ export const Header: React.FC<Props> = ({ project, views }) => {
   return (
     <header
       ref={ref}
-      className="relative isolate overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black"
+      className="relative isolate overflow-hidden bg-brand"
     >
       <div
         className={`fixed inset-x-0 top-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-b lg:bg-transparent ${
           isIntersecting
-            ? "bg-zinc-900/0 border-transparent"
+            ? "bg-brand/0 border-transparent"
             : "bg-white/10  border-zinc-200 lg:border-transparent"
         }`}
       >
@@ -58,8 +58,8 @@ export const Header: React.FC<Props> = ({ project, views }) => {
               title="このページの閲覧数"
               className={`duration-200 hover:font-medium flex items-center gap-1 ${
                 isIntersecting
-                  ? " text-zinc-400 hover:text-zinc-100"
-                  : "text-zinc-600 hover:text-zinc-900"
+                  ? " text-white/60 hover:text-white"
+                  : "text-white/60 hover:text-white"
               } `}
             >
               <Eye className="w-5 h-5" />{" "}
@@ -71,8 +71,8 @@ export const Header: React.FC<Props> = ({ project, views }) => {
               <Twitter
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
-                    ? " text-zinc-400 hover:text-zinc-100"
-                    : "text-zinc-600 hover:text-zinc-900"
+                    ? " text-white/60 hover:text-white"
+                    : "text-white/60 hover:text-white"
                 } `}
               />
             </Link>
@@ -80,8 +80,8 @@ export const Header: React.FC<Props> = ({ project, views }) => {
               <Github
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
-                    ? " text-zinc-400 hover:text-zinc-100"
-                    : "text-zinc-600 hover:text-zinc-900"
+                    ? " text-white/60 hover:text-white"
+                    : "text-white/60 hover:text-white"
                 } `}
               />
             </Link>
@@ -91,8 +91,8 @@ export const Header: React.FC<Props> = ({ project, views }) => {
             href="/projects"
             className={`duration-200 hover:font-medium ${
               isIntersecting
-                ? " text-zinc-400 hover:text-zinc-100"
-                : "text-zinc-600 hover:text-zinc-900"
+                ? " text-white/60 hover:text-white"
+                : "text-white/60 hover:text-white"
             } `}
           >
             <ArrowLeft className="w-6 h-6 " />
@@ -105,7 +105,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl font-display">
               {project.title}
             </h1>
-            <p className="mt-6 text-lg leading-8 text-zinc-300">
+            <p className="mt-6 text-lg leading-8 text-white/80">
               {project.description}
             </p>
           </div>

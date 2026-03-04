@@ -20,13 +20,13 @@ const experiences: Experience[] = experiencesData;
 
 export default function ExperiencePage() {
   return (
-    <div className="bg-brand-dark min-h-screen">
+    <div className="bg-brand min-h-screen">
       <Navigation />
       <div className="container mx-auto px-4 pt-24 pb-12">
         <h1 className="font-bold text-3xl md:text-5xl text-center mb-12 text-white">
           {profileData.headings.experience}
         </h1>
-        <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-12">
+        <p className="text-white/60 text-center max-w-3xl mx-auto mb-12">
           {profileData.descriptions.experience}
         </p>
 
@@ -40,11 +40,11 @@ export default function ExperiencePage() {
               className="mb-12 relative"
             >
               {index < experiences.length - 1 && (
-                <div className="absolute left-[25px] top-[76px] bottom-[-48px] w-[2px] bg-zinc-800" />
+                <div className="absolute left-[25px] top-[76px] bottom-[-48px] w-[2px] bg-white/10" />
               )}
               <Card>
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
-                  <div className="flex-shrink-0 bg-zinc-800 rounded-full w-12 h-12 flex items-center justify-center">
+                  <div className="flex-shrink-0 bg-white/10 rounded-full w-12 h-12 flex items-center justify-center">
                     <span className="text-white">
                       {experiences.length - index}
                     </span>
@@ -54,14 +54,14 @@ export default function ExperiencePage() {
                       <h3 className="text-xl font-bold text-white">
                         {exp.title}
                       </h3>
-                      <span className="text-zinc-500 text-sm">
+                      <span className="text-white/50 text-sm">
                         {exp.period}
                       </span>
                     </div>
-                    <div className="text-zinc-400 mb-4">
+                    <div className="text-white/60 mb-4">
                       {exp.company} • {exp.location}
                     </div>
-                    <ul className="text-zinc-300 list-disc pl-5 space-y-2">
+                    <ul className="text-white/80 list-disc pl-5 space-y-2">
                       {exp.description.map((item, i) => (
                         <li key={`${exp.id}-desc-${i}`}>{item}</li>
                       ))}

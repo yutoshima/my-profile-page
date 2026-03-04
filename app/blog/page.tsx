@@ -27,13 +27,13 @@ const formatDate = (dateString: string) => {
 
 export default function BlogPage() {
   return (
-    <div className="bg-brand-dark min-h-screen">
+    <div className="bg-brand min-h-screen">
       <Navigation />
       <div className="container mx-auto px-4 pt-24 pb-12">
         <h1 className="font-bold text-3xl md:text-5xl text-center mb-6 text-white">
           技術ブログ
         </h1>
-        <p className="text-zinc-400 text-center max-w-3xl mx-auto mb-12">
+        <p className="text-white/60 text-center max-w-3xl mx-auto mb-12">
           フロントエンド開発の知見やベストプラクティスについての記事を共有しています。
         </p>
 
@@ -51,17 +51,17 @@ export default function BlogPage() {
                     <h2 className="text-2xl font-bold text-white">
                       {post.title}
                     </h2>
-                    <span className="text-sm text-zinc-500 whitespace-nowrap">
+                    <span className="text-sm text-white/50 whitespace-nowrap">
                       {formatDate(post.date)}
                     </span>
                   </div>
-                  <p className="text-zinc-300 mb-4">{post.summary}</p>
+                  <p className="text-white/80 mb-4">{post.summary}</p>
 
                   <div className="flex flex-wrap gap-2 mb-4">
                     {post.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 bg-zinc-800 text-zinc-300 text-xs rounded-full"
+                        className="px-3 py-1 bg-white/10 text-white/80 text-xs rounded-full"
                       >
                         {tag}
                       </span>
@@ -70,7 +70,7 @@ export default function BlogPage() {
 
                   <button
                     type="button"
-                    className="mt-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded transition-colors"
+                    className="mt-2 px-4 py-2 bg-white hover:bg-white/90 text-white rounded transition-colors"
                   >
                     続きを読む
                   </button>
