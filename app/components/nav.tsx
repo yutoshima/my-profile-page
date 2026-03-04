@@ -4,6 +4,13 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
+const navLinks = [
+  { href: "/projects", label: "作品紹介" },
+  { href: "/skills", label: "スキル" },
+  { href: "/experience", label: "経歴" },
+  { href: "/contact", label: "お問い合わせ" },
+];
+
 export const Navigation = () => {
   const ref = useRef<HTMLElement>(null);
   const [isIntersecting, setIntersecting] = useState(true);
@@ -16,14 +23,9 @@ export const Navigation = () => {
     const observer = new IntersectionObserver(([entry]) =>
       setIntersecting(entry.isIntersecting),
     );
-
     observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
 
   return (
     <header ref={ref}>
@@ -47,36 +49,21 @@ export const Navigation = () => {
 
           {/* デスクトップナビゲーション */}
           <div className="hidden md:flex justify-between gap-8">
-            <Link
-              href="/projects"
-              className="duration-200 text-white/60 hover:text-white"
-            >
-              作品紹介
-            </Link>
-            <Link
-              href="/skills"
-              className="duration-200 text-white/60 hover:text-white"
-            >
-              スキル
-            </Link>
-            <Link
-              href="/experience"
-              className="duration-200 text-white/60 hover:text-white"
-            >
-              経歴
-            </Link>
-            <Link
-              href="/contact"
-              className="duration-200 text-white/60 hover:text-white"
-            >
-              お問い合わせ
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="duration-200 text-white/60 hover:text-white"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
 
           {/* モバイルメニューボタン */}
           <button
             className="md:hidden text-white/60 hover:text-white"
-            onClick={toggleMobileMenu}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="メニュー"
             type="button"
           >
@@ -92,34 +79,16 @@ export const Navigation = () => {
         {mobileMenuOpen && (
           <div className="md:hidden bg-brand border-t border-white/10">
             <div className="container mx-auto py-4 px-6 flex flex-col space-y-4">
-              <Link
-                href="/projects"
-                className="duration-200 text-white/60 hover:text-white py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                作品紹介
-              </Link>
-              <Link
-                href="/skills"
-                className="duration-200 text-white/60 hover:text-white py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                スキル
-              </Link>
-              <Link
-                href="/experience"
-                className="duration-200 text-white/60 hover:text-white py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                経歴
-              </Link>
-              <Link
-                href="/contact"
-                className="duration-200 text-white/60 hover:text-white py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                お問い合わせ
-              </Link>
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="duration-200 text-white/60 hover:text-white py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </div>
         )}

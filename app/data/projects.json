@@ -1,0 +1,100 @@
+[
+  {
+    "id": "expo-robotics-ai",
+    "title": "万博ゴミ分別AI & ロボット制御インフラ",
+    "description": "最新のRAG技術とROSを統合したゴミ分別システム。AIコアの全実装に加え、ハードウェア制御を支えるROSインフラの構築を単独で担当。",
+    "technologies": ["Python", "ROS", "LLM", "RAG", "Docker", "Linux Infrastructure"],
+    "githubUrl": "https://github.com/yutoshima/"
+  },
+  {
+    "id": "argumentation-nlp",
+    "title": "論証図自動評価システム",
+    "description": "学部時代の研究プロジェクト。思考可視化手法「論証図」をNLPを用いて自動評価するバックエンドを実装。",
+    "technologies": ["Python", "Natural Language Processing", "Java"],
+    "githubUrl": "https://github.com/yutoshima/"
+  },
+  {
+    "id": "auto-news",
+    "title": "車・ITニュース自動配信システム",
+    "description": "毎朝、車とITの最新ニュースをRSSで自動収集し、LLM（Poe API / Gemini）で要約してDiscordに配信するサービス。新型車の自動検出機能付き。",
+    "technologies": ["Python", "LLM", "Gemini", "RSS", "Discord API"],
+    "githubUrl": "https://github.com/yutoshima/auto_news"
+  },
+  {
+    "id": "ronshows-alpha",
+    "title": "論証グラフ作成ツール",
+    "description": "論理的推論を視覚化するWebアプリ。前提と結論のノードを配置し、演繹・仮定・対立などのリンクで推論過程を図示できる。",
+    "technologies": ["TypeScript", "Next.js", "React"],
+    "githubUrl": "https://github.com/yutoshima/ronshows_alpha"
+  },
+  {
+    "id": "concept-map-system",
+    "title": "概念マップ採点システム",
+    "description": "McClure・Novak・LEA法など複数アルゴリズムを統合した概念マップ自動採点ツール。Python標準ライブラリのみで動作。",
+    "technologies": ["Python"],
+    "githubUrl": "https://github.com/yutoshima/concept-map-system"
+  },
+  {
+    "id": "research-survey-system",
+    "title": "研究用アンケート・穴埋めシステム",
+    "description": "ログ機能・データベース機能を備えた研究用アンケートおよび穴埋め問題システム。",
+    "technologies": ["Java"],
+    "githubUrl": "https://github.com/yutoshima/research-survey-system"
+  },
+  {
+    "id": "form-response-logger",
+    "title": "研究用アンケートロガー（デスクトップ版）",
+    "description": "Java Swingで構築した研究用アンケートGUIアプリ。回答者の選択・記述・操作をタイムスタンプ付きでロギングし、CSV/JSONでエクスポート。HTML形式の設問・ライト/ダークテーマにも対応。",
+    "technologies": ["Java", "Java Swing", "Maven", "JSON"],
+    "githubUrl": "https://github.com/yutoshima/form-response-logger"
+  },
+  {
+    "id": "form-response-logger-python",
+    "title": "研究用アンケートロガー（Python版）",
+    "description": "customtkinterを用いたPython製の研究用アンケートGUIアプリ。回答のタイムスタンプロギング、CSV/JSONエクスポート、回答ロック機能を備える。",
+    "technologies": ["Python", "customtkinter", "CSV", "JSON"],
+    "githubUrl": "https://github.com/yutoshima/form-response-logger-python"
+  },
+  {
+    "id": "kobe-subway-prediction",
+    "title": "神戸市地下鉄 乗客数予測",
+    "description": "神戸市地下鉄の乗客数データを用いた時系列予測モデル。Jupyter Notebookで実装し、データの前処理・可視化・予測までを一貫して行う。",
+    "technologies": ["Python", "Jupyter Notebook", "機械学習"],
+    "githubUrl": "https://github.com/yutoshima/kobe-subway-prediction"
+  },
+  {
+    "id": "news-finance",
+    "title": "金融ニュース分析",
+    "description": "金融ニュースを収集・分析するJupyter Notebookプロジェクト。テキストデータの処理と可視化を行う。",
+    "technologies": ["Python", "Jupyter Notebook", "データ分析"],
+    "githubUrl": "https://github.com/yutoshima/news_finance"
+  },
+  {
+    "id": "weather-forecast",
+    "title": "天気予報分析",
+    "description": "気象データを用いた天気予報の分析・可視化プロジェクト。Jupyter Notebookで実装。",
+    "technologies": ["Python", "Jupyter Notebook", "データ分析"],
+    "githubUrl": "https://github.com/yutoshima/weather-forecast"
+  },
+  {
+    "id": "my-profile-page",
+    "title": "ポートフォリオサイト（本サイト）",
+    "description": "Next.js App Router・TailwindCSSで構築。GitHub Actionsで自動デプロイ。",
+    "technologies": ["TypeScript", "Next.js", "TailwindCSS"],
+    "githubUrl": "https://github.com/yutoshima/my-profile-page"
+  },
+  {
+    "id": "introduction-lp2",
+    "title": "HTML/CSS 学習 ランディングページ",
+    "description": "HTMLとCSSの基礎学習として制作したランディングページ。レイアウト・スタイリングの基本を実践的に習得するための課題作品。",
+    "technologies": ["HTML", "CSS"],
+    "githubUrl": "https://github.com/yutoshima/introduction_lp2"
+  },
+  {
+    "id": "trimming",
+    "title": "画像トリミングデスクトップアプリ",
+    "description": "PythonとPillowで構築したGUI画像クロッピングツール。ドラッグ操作による範囲指定、リサイズオプション付き保存、クロップ履歴管理に対応。",
+    "technologies": ["Python", "Pillow", "GUI"],
+    "githubUrl": "https://github.com/yutoshima/trimming"
+  }
+]

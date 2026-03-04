@@ -1,35 +1,7 @@
 import Link from "next/link";
-import React from "react";
-import { Github, Mail, Facebook } from "lucide-react";
+import { socials } from "./data/socials";
 import { Navigation } from "./components/nav";
 import { Footer } from "./components/footer";
-
-const socials = [
-  {
-    icon: (
-      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.258 5.63L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
-      </svg>
-    ),
-    href: "https://x.com/Yuto00579583",
-    label: "X",
-  },
-  {
-    icon: <Github className="w-4 h-4" />,
-    href: "https://github.com/yutoshima",
-    label: "GitHub",
-  },
-  {
-    icon: <Mail className="w-4 h-4" />,
-    href: "mailto:yutoshima1234@gmail.com",
-    label: "Email",
-  },
-  {
-    icon: <Facebook className="w-4 h-4" />,
-    href: "https://www.facebook.com/profile.php?id=100090928243991",
-    label: "Facebook",
-  },
-];
 
 const sections = [
   { title: "作品紹介", href: "/projects", description: "学生時代・個人開発で作ったプロジェクト" },
