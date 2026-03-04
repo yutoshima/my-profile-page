@@ -7,15 +7,15 @@ import { Analytics } from "./components/analytics";
 export const metadata: Metadata = {
   metadataBase: new URL("https://yutoshima.github.io/my-profile-page"),
   title: {
-    default: "Yuto Shima | Frontend Engineer",
+    default: "Yuto Shima | AI Engineer",
     template: "%s | Yuto Shima",
   },
   description:
-    "島 悠人のポートフォリオサイト。フロントエンドエンジニアとして培った技術とプロジェクトを紹介しています。",
+    "島 悠人のポートフォリオ。LLM・生成AIを活用したプロダクト開発を専門とするAIエンジニア。",
   openGraph: {
-    title: "Yuto Shima | Frontend Engineer",
+    title: "Yuto Shima | AI Engineer",
     description:
-      "島 悠人のポートフォリオサイト。フロントエンドエンジニアとして培った技術とプロジェクトを紹介しています。",
+      "島 悠人のポートフォリオ。LLM・生成AIを活用したプロダクト開発を専門とするAIエンジニア。",
     url: "https://yutoshima.github.io/my-profile-page",
     siteName: "Yuto Shima Portfolio",
     images: [

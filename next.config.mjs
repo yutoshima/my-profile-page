@@ -10,7 +10,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.GITHUB_ACTIONS ? "/my-profile-app" : "",
+  basePath: process.env.GITHUB_ACTIONS ? "/my-profile-page" : "",
   trailingSlash: true,
 };
 
