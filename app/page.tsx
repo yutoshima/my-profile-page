@@ -29,8 +29,8 @@ export default function Home() {
 
           <div className="w-12 h-px bg-white/40 mx-auto mb-8" />
 
-          <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-12 max-w-sm mx-auto">
-            学生時代からAI・LLMを使ったプロダクト開発に取り組んできました。現在は社会人1年目です。
+          <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-12">
+            学生時代からAI・LLMを使ったプロダクト開発に取り組み、現在はエンジニアとして活動しています。
           </p>
 
           <div className="flex items-center justify-center gap-4 mb-12">
