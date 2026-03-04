@@ -14,6 +14,7 @@ export default function ExperiencePage() {
     <PageLayout
       title={profileData.headings.experience}
       description={profileData.descriptions.experience}
+      label="Experience"
     >
       <div className="space-y-6">
         {experiencesData.map((exp) => (
@@ -21,7 +22,7 @@ export default function ExperiencePage() {
             <div className="p-6">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                 <h3 className="text-lg font-bold text-white">{exp.title}</h3>
-                <span className="text-white/50 text-sm">{exp.period}</span>
+                <span className="text-white/70 text-xs bg-white/10 rounded-full px-2 py-0.5">{exp.period}</span>
               </div>
               <div className="text-white/60 text-sm mb-4">
                 {exp.company} · {exp.location}

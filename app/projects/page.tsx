@@ -15,6 +15,7 @@ export default function ProjectsPage() {
     <PageLayout
       title={profileData.headings.projects}
       description={profileData.descriptions.projects}
+      label="Projects"
     >
       <div className="space-y-4">
         {projectsData.map((project) => (
@@ -40,7 +41,7 @@ export default function ProjectsPage() {
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="px-2 py-0.5 text-xs text-white/70 border border-white/20"
+                    className="px-3 py-1 text-xs text-white/70 border border-white/20 rounded-full"
                   >
                     {tech}
                   </span>

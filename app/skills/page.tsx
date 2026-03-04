@@ -16,10 +16,11 @@ export default function SkillsPage() {
     <PageLayout
       title={profileData.headings.skills}
       description={profileData.descriptions.skills}
+      label="Skills"
     >
       {categories.map((category) => (
         <div key={category} className="mb-12">
-          <h3 className="text-xl font-bold text-white mb-6">{category}</h3>
+          <h3 className="text-xl font-bold text-white mb-6 pb-2 border-b border-white/20">{category}</h3>
           <div className="flex flex-col gap-4">
             {skillsData
               .filter((s) => s.category === category)
@@ -30,8 +31,8 @@ export default function SkillsPage() {
                       <h4 className="font-semibold text-white">{skill.name}</h4>
                       <span className="text-sm text-white/60">{skill.level}%</span>
                     </div>
-                    <div className="w-full bg-white/20 rounded-full h-1.5">
-                      <div className="h-1.5 rounded-full bg-white" style={{ width: `${skill.level}%` }} />
+                    <div className="w-full bg-white/30 rounded-full h-2">
+                      <div className="h-2 rounded-full bg-white" style={{ width: `${skill.level}%` }} />
                     </div>
                     <p className="text-white/60 text-sm">{skill.description}</p>
                   </div>
