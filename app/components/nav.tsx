@@ -2,11 +2,14 @@
 import { ArrowLeft, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export const Navigation = () => {
   const ref = useRef<HTMLElement>(null);
   const [isIntersecting, setIntersecting] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     if (!ref.current) return;
@@ -32,12 +35,15 @@ export const Navigation = () => {
         }`}
       >
         <div className="container flex items-center justify-between p-6 mx-auto">
-          <Link
-            href="/"
-            className="duration-200 text-white/70 hover:text-white"
-          >
-            <ArrowLeft className="w-6 h-6" />
-          </Link>
+          {isHome ? (
+            <span className="font-display font-bold text-white tracking-widest text-sm">
+              YS
+            </span>
+          ) : (
+            <Link href="/" className="duration-200 text-white/70 hover:text-white">
+              <ArrowLeft className="w-6 h-6" />
+            </Link>
+          )}
 
           {/* デスクトップナビゲーション */}
           <div className="hidden md:flex justify-between gap-8">
