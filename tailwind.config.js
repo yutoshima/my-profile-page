@@ -34,8 +34,6 @@ module.exports = {
         brand: {
           DEFAULT: "#5B72A8",
           light: "#7A8DBE",
-          dark: "#3D5085",
-          darker: "#2A3A6E",
         },
       },
       backgroundImage: {

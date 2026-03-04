@@ -29,7 +29,7 @@ export default function Contact() {
                 target="_blank"
                 className="p-4 flex items-center gap-4 group"
               >
-                <span className="flex items-center justify-center w-12 h-12 border rounded-full text-white/90 group-hover:text-white border-white/40 bg-brand-dark group-hover:bg-brand-dark group-hover:border-white/60 transition-colors">
+                <span className="flex items-center justify-center w-12 h-12 border rounded-full text-white/90 group-hover:text-white border-white/40 bg-brand group-hover:bg-white/10 group-hover:border-white/60 transition-colors">
                   {s.icon}
                 </span>
                 <div className="flex flex-col">

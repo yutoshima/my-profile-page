@@ -68,7 +68,7 @@ export default function Home() {
       </section>
 
       {/* Contents */}
-      <section className="bg-brand-dark px-8 py-20">
+      <section className="bg-brand px-8 py-20">
         <div className="max-w-3xl mx-auto">
           <p className="text-xs uppercase tracking-[0.25em] text-white/30 text-center mb-12">
             Contents
