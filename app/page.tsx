@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-8 text-center overflow-hidden">
-        <div className="relative z-10 max-w-2xl mx-auto">
+        <div className="relative z-10 max-w-4xl mx-auto">
           <p className="text-xs uppercase tracking-[0.3em] text-white/50 mb-10">
             AI Engineer · 2025
           </p>
