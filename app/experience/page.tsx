@@ -1,5 +1,6 @@
 import React from "react";
 import { Navigation } from "../components/nav";
+import { Footer } from "../components/footer";
 import { Card } from "../components/card";
 import experiencesData from "../data/experiences.json";
 import profileData from "../data/profile.json";
@@ -50,6 +51,7 @@ export default function ExperiencePage() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

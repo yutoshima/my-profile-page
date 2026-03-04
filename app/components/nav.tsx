@@ -69,7 +69,7 @@ export const Navigation = () => {
 
           {/* モバイルメニューボタン */}
           <button
-            className="md:hidden text-zinc-400 hover:text-zinc-100"
+            className="md:hidden text-white/60 hover:text-white"
             onClick={toggleMobileMenu}
             aria-label="メニュー"
             type="button"

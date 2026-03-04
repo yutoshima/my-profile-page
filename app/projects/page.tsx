@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { Navigation } from "../components/nav";
+import { Footer } from "../components/footer";
 import { Card } from "../components/card";
 import type { Metadata } from "next";
 
@@ -208,6 +209,7 @@ export default function ProjectsPage() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

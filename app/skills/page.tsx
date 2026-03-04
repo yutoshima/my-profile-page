@@ -1,5 +1,6 @@
 import React from "react";
 import { Navigation } from "../components/nav";
+import { Footer } from "../components/footer";
 import { Card } from "../components/card";
 import skillsData from "../data/skills.json";
 import profileData from "../data/profile.json";
@@ -55,6 +56,7 @@ export default function SkillsPage() {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 }

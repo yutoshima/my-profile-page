@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
+import { Footer } from "../components/footer";
 import { Card } from "../components/card";
 
 const socials = [
@@ -300,6 +301,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

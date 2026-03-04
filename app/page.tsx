@@ -1,13 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { Github, Mail, Facebook } from "lucide-react";
-
-const navigation = [
-  { name: "作品", href: "/projects" },
-  { name: "スキル", href: "/skills" },
-  { name: "経歴", href: "/experience" },
-  { name: "連絡", href: "/contact" },
-];
+import { Navigation } from "./components/nav";
+import { Footer } from "./components/footer";
 
 const socials = [
   {
@@ -46,21 +41,7 @@ const sections = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-brand text-white">
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 bg-brand border-b border-white/10">
-        <span className="text-white font-bold text-sm tracking-widest font-display">YS</span>
-        <ul className="hidden md:flex items-center gap-8">
-          {navigation.map((item) => (
-            <li key={item.href}>
-              <Link href={item.href} className="text-sm text-white/70 hover:text-white transition-colors">
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <Link href="/contact" className="text-sm text-white/70 hover:text-white transition-colors">
-          連絡する
-        </Link>
-      </nav>
+      <Navigation />
 
       <section className="flex flex-col justify-center min-h-screen px-8 pt-24 pb-16 max-w-3xl mx-auto">
         <p className="text-white/60 text-sm mb-4">AIエンジニア · 2025年4月〜</p>
@@ -106,19 +87,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="px-8 py-6 border-t border-white/10">
-        <div className="max-w-3xl mx-auto flex items-center justify-between">
-          <p className="text-white/30 text-xs">© 2025 Yuto Shima</p>
-          <div className="flex items-center gap-4">
-            {socials.map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-                className="text-white/30 hover:text-white/70 transition-colors">
-                {s.icon}
-              </a>
-            ))}
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
