@@ -20,7 +20,7 @@ export const PageLayout = ({ title, description, label, children }: Props) => {
         <h1 className="font-bold text-3xl md:text-5xl text-left mb-6 text-white">
           {title}
         </h1>
-        <p className="text-white/60 text-left mb-12">{description}</p>
+        <p className="text-white/60 text-left mb-12 text-lg">{description}</p>
         <div className="w-full h-px bg-white/15 mb-12" />
         {children}
       </Container>

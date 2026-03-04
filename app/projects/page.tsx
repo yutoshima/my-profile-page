@@ -34,14 +34,14 @@ export default function ProjectsPage() {
                   </a>
                 )}
               </div>
-              <p className="text-white/60 text-sm leading-relaxed mb-4">
+              <p className="text-white/60 text-base leading-relaxed mb-4">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1 text-xs text-white/70 border border-white/20 rounded-full"
+                    className="px-3 py-1 text-sm text-white/70 border border-white/20 rounded-full"
                   >
                     {tech}
                   </span>

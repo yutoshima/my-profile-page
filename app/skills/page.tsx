@@ -29,12 +29,12 @@ export default function SkillsPage() {
                   <div className="p-6 space-y-3">
                     <div className="flex items-center justify-between">
                       <h4 className="font-semibold text-white">{skill.name}</h4>
-                      <span className="text-sm text-white/60">{skill.level}%</span>
+                      <span className="text-base text-white/60">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-white/30 rounded-full h-2">
                       <div className="h-2 rounded-full bg-white" style={{ width: `${skill.level}%` }} />
                     </div>
-                    <p className="text-white/60 text-sm">{skill.description}</p>
+                    <p className="text-white/60 text-base">{skill.description}</p>
                   </div>
                 </Card>
               ))}

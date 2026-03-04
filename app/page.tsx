@@ -45,13 +45,13 @@ export default function Home() {
           <div className="flex items-center justify-center gap-4 mb-12">
             <Link
               href="/projects"
-              className="px-7 py-3 rounded-full bg-white text-brand text-sm font-semibold hover:bg-white/90 transition-colors"
+              className="px-7 py-3 rounded-full bg-white text-brand text-base font-semibold hover:bg-white/90 transition-colors"
             >
               作品を見る
             </Link>
             <Link
               href="/contact"
-              className="px-7 py-3 rounded-full border border-white/60 text-white text-sm hover:border-white transition-colors"
+              className="px-7 py-3 rounded-full border border-white/60 text-white text-base hover:border-white transition-colors"
             >
               連絡する
             </Link>
@@ -88,8 +88,8 @@ export default function Home() {
                 className="group bg-surface p-8 hover:bg-[#475d90] transition-colors duration-200"
               >
                 <h3 className="text-white font-semibold text-lg mb-2">{section.title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed mb-6">{section.description}</p>
-                <span className="text-white/30 group-hover:text-white/80 transition-colors text-sm">
+                <p className="text-white/50 text-base leading-relaxed mb-6">{section.description}</p>
+                <span className="text-white/30 group-hover:text-white/80 transition-colors text-base">
                   → 見る
                 </span>
               </Link>

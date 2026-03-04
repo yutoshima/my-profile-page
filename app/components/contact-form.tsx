@@ -84,7 +84,7 @@ export const ContactForm = () => {
           <>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-white/60 mb-1">お名前</label>
+                <label htmlFor="name" className="block text-base font-medium text-white/60 mb-1">お名前</label>
                 <input
                   id="name" name="name" type="text" required
                   value={formData.name} onChange={handleChange} disabled={isSubmitting}
@@ -92,7 +92,7 @@ export const ContactForm = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-white/60 mb-1">メールアドレス</label>
+                <label htmlFor="email" className="block text-base font-medium text-white/60 mb-1">メールアドレス</label>
                 <input
                   id="email" name="email" type="email" required
                   value={formData.email} onChange={handleChange} disabled={isSubmitting}
@@ -100,7 +100,7 @@ export const ContactForm = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-white/60 mb-1">メッセージ</label>
+                <label htmlFor="message" className="block text-base font-medium text-white/60 mb-1">メッセージ</label>
                 <textarea
                   id="message" name="message" rows={5} required
                   value={formData.message} onChange={handleChange} disabled={isSubmitting}
