@@ -1,11 +1,6 @@
-import { withContentlayer } from "next-contentlayer";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
-  experimental: {
-    mdxRs: true,
-  },
+  pageExtensions: ["js", "jsx", "ts", "tsx"],
   ...(process.env.GITHUB_ACTIONS && {
     output: "export",
     images: { unoptimized: true },
@@ -14,4 +9,4 @@ const nextConfig = {
   trailingSlash: true,
 };
 
-export default withContentlayer(nextConfig);
+export default nextConfig;

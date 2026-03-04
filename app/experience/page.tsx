@@ -1,5 +1,11 @@
 import React from "react";
+import type { Metadata } from "next";
 import { Navigation } from "../components/nav";
+
+export const metadata: Metadata = {
+  title: "経歴 | Yuto Shima",
+  description: "島 悠人の経歴",
+};
 import { Footer } from "../components/footer";
 import { Card } from "../components/card";
 import experiencesData from "../data/experiences.json";

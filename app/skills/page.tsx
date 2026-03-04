@@ -1,5 +1,11 @@
 import React from "react";
+import type { Metadata } from "next";
 import { Navigation } from "../components/nav";
+
+export const metadata: Metadata = {
+  title: "スキル | Yuto Shima",
+  description: "島 悠人のスキルセット",
+};
 import { Footer } from "../components/footer";
 import { Card } from "../components/card";
 import skillsData from "../data/skills.json";
