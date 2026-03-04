@@ -88,7 +88,7 @@ export const ContactForm = () => {
                 <input
                   id="name" name="name" type="text" required
                   value={formData.name} onChange={handleChange} disabled={isSubmitting}
-                  className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-2 bg-transparent border border-white/30 rounded-md text-white focus:outline-none focus:border-white/70"
                 />
               </div>
               <div>
@@ -96,7 +96,7 @@ export const ContactForm = () => {
                 <input
                   id="email" name="email" type="email" required
                   value={formData.email} onChange={handleChange} disabled={isSubmitting}
-                  className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-2 bg-transparent border border-white/30 rounded-md text-white focus:outline-none focus:border-white/70"
                 />
               </div>
               <div>
@@ -104,12 +104,12 @@ export const ContactForm = () => {
                 <textarea
                   id="message" name="message" rows={5} required
                   value={formData.message} onChange={handleChange} disabled={isSubmitting}
-                  className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full px-4 py-2 bg-transparent border border-white/30 rounded-md text-white focus:outline-none focus:border-white/70"
                 />
               </div>
               <button
                 type="submit" disabled={isSubmitting}
-                className="w-full flex items-center justify-center px-4 py-2 bg-white text-brand rounded-md hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/50 transition-colors"
+                className="w-full flex items-center justify-center px-4 py-2 bg-white text-brand rounded-md hover:bg-white/90 focus:outline-none transition-colors"
               >
                 {isSubmitting ? (
                   <><Loader2 className="animate-spin mr-2" size={20} />送信中...</>

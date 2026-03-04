@@ -17,11 +17,6 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative flex flex-col items-center justify-center min-h-screen px-8 text-center overflow-hidden">
-        {/* 中心に向かう淡いグラデーション */}
-        <div className="absolute inset-0 bg-gradient-radial from-white/15 via-transparent to-transparent pointer-events-none" />
-        {/* 奥行きを出す白オーブ */}
-        <div className="absolute -top-32 -left-32 w-96 h-96 bg-white/15 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-white/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 max-w-2xl mx-auto">
           <p className="text-xs uppercase tracking-[0.3em] text-white/50 mb-10">
@@ -47,7 +42,7 @@ export default function Home() {
             </Link>
             <Link
               href="/contact"
-              className="px-7 py-3 rounded-full border border-white/60 text-white text-sm hover:bg-white/10 hover:border-white transition-colors"
+              className="px-7 py-3 rounded-full border border-white/60 text-white text-sm hover:border-white transition-colors"
             >
               連絡する
             </Link>
@@ -81,7 +76,7 @@ export default function Home() {
               <Link
                 key={section.href}
                 href={section.href}
-                className="group p-7 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all"
+                className="group p-7 border border-white/10 hover:border-white/30 transition-all"
               >
                 <h3 className="text-white font-semibold mb-2">{section.title}</h3>
                 <p className="text-white/50 text-sm leading-relaxed">{section.description}</p>
