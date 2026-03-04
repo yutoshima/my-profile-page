@@ -1,32 +1,58 @@
 [
   {
+    "id": "ai-rag",
     "name": "AI Implementation / RAG",
     "level": 95,
     "description": "論文実装からプロダクトへの統合まで一貫して対応可能",
-    "category": "AI"
+    "category": "AI",
+    "technologies": ["LLM", "RAG", "Gemini"]
   },
   {
+    "id": "nlp",
+    "name": "Natural Language Processing",
+    "level": 65,
+    "description": "論証図の自動評価など、日本語テキスト処理・解析の実装経験あり",
+    "category": "AI",
+    "technologies": ["Natural Language Processing"]
+  },
+  {
+    "id": "ros-robotics",
     "name": "ROS / Robotics",
     "level": 75,
     "description": "ROSを用いたハードウェア連携および通信インフラ構築",
-    "category": "Robotics"
+    "category": "Robotics",
+    "technologies": ["ROS"]
   },
   {
+    "id": "python",
     "name": "Python",
     "level": 85,
     "description": "AI・データ分析・システム開発におけるメイン言語",
-    "category": "言語"
+    "category": "言語",
+    "technologies": ["Python"]
   },
   {
-    "name": "System Infrastructure",
-    "level": 70,
-    "description": "Docker等を用いた開発・運用環境の設計・構築",
-    "category": "Infrastructure"
+    "id": "java",
+    "name": "Java",
+    "level": 65,
+    "description": "研究ツール開発で使用。Swing GUIアプリ・データ処理ツールの実装経験あり",
+    "category": "言語",
+    "technologies": ["Java", "Java Swing"]
   },
   {
+    "id": "typescript-nextjs",
     "name": "TypeScript / Next.js",
     "level": 70,
     "description": "フロントエンド・AIエージェントのUI開発",
-    "category": "フロントエンド"
+    "category": "フロントエンド",
+    "technologies": ["TypeScript", "Next.js", "TailwindCSS"]
+  },
+  {
+    "id": "infrastructure",
+    "name": "System Infrastructure",
+    "level": 70,
+    "description": "Docker等を用いた開発・運用環境の設計・構築",
+    "category": "Infrastructure",
+    "technologies": ["Docker", "Linux Infrastructure"]
   }
 ]

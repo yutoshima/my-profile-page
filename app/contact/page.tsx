@@ -16,6 +16,7 @@ export default function Contact() {
     <PageLayout
       title={profileData.headings.contact}
       description={profileData.descriptions.contact}
+      href="/contact"
     >
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         <ContactForm />

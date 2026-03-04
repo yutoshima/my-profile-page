@@ -1,15 +1,17 @@
 import { Navigation } from "./nav";
 import { Footer } from "./footer";
 import { Container } from "./container";
+import { PageNav } from "./page-nav";
 import type { PropsWithChildren } from "react";
 
 type Props = PropsWithChildren<{
   title: string;
   description: string;
   label?: string;
+  href: string;
 }>;
 
-export const PageLayout = ({ title, description, label, children }: Props) => {
+export const PageLayout = ({ title, description, label, href, children }: Props) => {
   return (
     <div className="bg-brand min-h-screen">
       <Navigation />
@@ -23,6 +25,7 @@ export const PageLayout = ({ title, description, label, children }: Props) => {
         <p className="text-white/60 text-left mb-12 text-lg">{description}</p>
         <div className="w-full h-px bg-white/15 mb-12" />
         {children}
+        <PageNav current={href} />
       </Container>
       <Footer />
     </div>
