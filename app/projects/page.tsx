@@ -86,7 +86,7 @@ export default function ProjectsPage() {
   return (
     <div className="bg-brand min-h-screen">
       <Navigation />
-      <div className="container mx-auto px-4 pt-24 pb-12 sm:px-6 md:pb-16 lg:pb-20">
+      <div className="max-w-3xl mx-auto px-8 pt-24 pb-12">
         <h1 className="font-bold text-3xl md:text-5xl text-center mb-6 text-white">
           作品紹介
         </h1>

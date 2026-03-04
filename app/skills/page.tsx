@@ -1,9 +1,6 @@
-"use client";
-
 import React from "react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
-import { motion } from "framer-motion";
 import skillsData from "../data/skills.json";
 import profileData from "../data/profile.json";
 
@@ -21,44 +18,36 @@ export default function SkillsPage() {
   return (
     <div className="bg-brand min-h-screen">
       <Navigation />
-      <div className="container mx-auto px-4 pt-24 pb-12 sm:px-6 md:pb-16 lg:pb-20">
+      <div className="max-w-3xl mx-auto px-8 pt-24 pb-12">
         <h1 className="font-bold text-3xl md:text-5xl text-center mb-6 text-white">
           {profileData.headings.skills}
         </h1>
-        <p className="text-white/60 text-center max-w-3xl mx-auto mb-12">
+        <p className="text-white/60 text-center mb-12">
           {profileData.descriptions.skills}
         </p>
 
-        <div className="w-full h-px bg-white/10 mb-12" />
+        <div className="w-full h-px bg-white/15 mb-12" />
 
         {categories.map((category) => (
           <div key={category} className="mb-12">
-            <h3 className="text-2xl font-bold text-white mb-6">
-              {category}
-            </h3>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <h3 className="text-xl font-bold text-white mb-6">{category}</h3>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               {skills
                 .filter((skill) => skill.category === category)
                 .map((skill) => (
                   <Card key={skill.name}>
-                    <div className="p-6 space-y-4">
+                    <div className="p-6 space-y-3">
                       <div className="flex items-center justify-between">
-                        <h4 className="text-xl font-semibold text-white">
-                          {skill.name}
-                        </h4>
-                        <span className="text-sm text-white/60">
-                          {skill.level}%
-                        </span>
+                        <h4 className="font-semibold text-white">{skill.name}</h4>
+                        <span className="text-sm text-white/60">{skill.level}%</span>
                       </div>
-                      <div className="w-full bg-white/20 rounded-full h-2.5">
-                        <motion.div
-                          className="h-2.5 rounded-full bg-white"
-                          initial={{ width: 0 }}
-                          animate={{ width: `${skill.level}%` }}
-                          transition={{ duration: 1, delay: 0.2 }}
+                      <div className="w-full bg-white/20 rounded-full h-1.5">
+                        <div
+                          className="h-1.5 rounded-full bg-white"
+                          style={{ width: `${skill.level}%` }}
                         />
                       </div>
-                      <p className="text-white/60">{skill.description}</p>
+                      <p className="text-white/60 text-sm">{skill.description}</p>
                     </div>
                   </Card>
                 ))}

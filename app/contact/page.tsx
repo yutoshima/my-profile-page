@@ -6,7 +6,6 @@ import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
-import { motion } from "framer-motion";
 
 const socials = [
   {
@@ -110,7 +109,7 @@ export default function Contact() {
   return (
     <div className="bg-brand min-h-screen">
       <Navigation />
-      <div className="container mx-auto px-4 pt-24 pb-12 sm:px-6 md:pb-16 lg:pb-20">
+      <div className="max-w-3xl mx-auto px-8 pt-24 pb-12">
         <h1 className="font-bold text-3xl md:text-5xl text-center mb-6 text-white">
           お問い合わせ
         </h1>
@@ -137,11 +136,7 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2">
           {/* コンタクトフォーム */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+          <div>
             <Card>
               <div className="p-8">
                 <h3 className="text-xl font-bold text-white mb-6">
@@ -270,7 +265,7 @@ export default function Contact() {
                 )}
               </div>
             </Card>
-          </motion.div>
+          </div>
 
           {/* ソーシャルリンク */}
           <div className="space-y-6">
@@ -279,19 +274,14 @@ export default function Contact() {
             </h3>
             <div className="grid gap-4">
               {socials.map((s, i) => (
-                <motion.div
-                  key={s.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                >
+                <div key={s.label}>
                   <Card>
                     <Link
                       href={s.href}
                       target="_blank"
                       className="p-4 relative flex items-center gap-4 duration-700 group"
                     >
-                      <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-white/90 group-hover:text-white group-hover:bg-brand-dark border-white/40 bg-brand-dark group-hover:border-zinc-200">
+                      <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-white/90 group-hover:text-white group-hover:bg-brand-dark border-white/40 bg-brand-dark group-hover:border-white/60">
                         {s.icon}
                       </span>
                       <div className="flex flex-col">
@@ -304,7 +294,7 @@ export default function Contact() {
                       </div>
                     </Link>
                   </Card>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
