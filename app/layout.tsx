@@ -1,7 +1,7 @@
 import "../global.css";
 import type { ReactNode } from "react";
-import { Inter } from "@next/font/google";
-import LocalFont from "@next/font/local";
+import { Inter } from "next/font/google";
+import LocalFont from "next/font/local";
 import type { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
@@ -60,7 +60,7 @@ const calSans = LocalFont({
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="ja" className={[inter.variable, calSans.variable].join(" ")}>
+    <html lang="ja" className={`${inter.variable} ${calSans.variable}`}>
       <head>
         <Analytics />
       </head>
