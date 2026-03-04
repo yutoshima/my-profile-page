@@ -6,10 +6,10 @@ const nextConfig = {
   experimental: {
     mdxRs: true,
   },
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
+  ...(process.env.GITHUB_ACTIONS && {
+    output: "export",
+    images: { unoptimized: true },
+  }),
   basePath: process.env.GITHUB_ACTIONS ? "/my-profile-page" : "",
   trailingSlash: true,
 };
