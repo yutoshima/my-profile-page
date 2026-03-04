@@ -20,16 +20,15 @@ export default function ExperiencePage() {
         {experiencesData.map((exp) => (
           <Card key={exp.id}>
             <div className="p-6">
-              <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                <h3 className="text-lg font-bold text-white">{exp.title}</h3>
-                <span className="text-white/50 text-sm">{exp.period}</span>
-              </div>
-              <div className="text-white/60 text-sm mb-4">
-                {exp.company} · {exp.location}
-              </div>
-              <ul className="text-white/80 text-sm list-disc pl-5 space-y-1">
+              <p className="text-xs text-white/40 mb-2">{exp.period}</p>
+              <h3 className="text-base font-bold text-white mb-1">{exp.title}</h3>
+              <p className="text-white/60 text-sm mb-4">{exp.company} · {exp.location}</p>
+              <ul className="text-white/80 text-sm space-y-2">
                 {exp.description.map((item, i) => (
-                  <li key={i}>{item}</li>
+                  <li key={i} className="flex gap-2">
+                    <span className="text-white/30 mt-0.5 shrink-0">–</span>
+                    <span>{item}</span>
+                  </li>
                 ))}
               </ul>
             </div>
