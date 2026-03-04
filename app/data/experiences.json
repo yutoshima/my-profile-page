@@ -1,26 +1,59 @@
 [
   {
-    "id": "new-grad",
-    "title": "AIエンジニア",
-    "company": "（就職先）",
-    "location": "東京",
-    "period": "2025年4月 - 現在",
+    "id": "expo-waste-ai",
+    "title": "Lead AI & Infrastructure Engineer",
+    "company": "万博ゴミ分別AI 開発プロジェクト（有志チーム）",
+    "location": "神戸市",
+    "period": "2025年4月 - 2026年3月",
     "description": [
-      "社会人1年目としてAIエンジニアリングに従事",
-      "LLM・生成AIを活用したプロダクト開発"
+      "AIコアエンジンおよびROSベースの通信・制御インフラの設計・実装を統括",
+      "RAGパイプラインの全工程を単独で実装し、自治体別の複雑なルールへの適応と高精度化を実現",
+      "ROSを用いたハードウェア連携基盤を構築し、AIの推論結果をロボット制御へ反映させる一連のインフラを開発",
+      "チームのテックリードとして、論文サーベイに基づく技術選定の主導およびコードレビューを実施"
     ]
   },
   {
-    "id": "student-dev",
-    "title": "個人開発・学習",
-    "company": "大学在学中",
+    "id": "gci-matsuo-lab",
+    "title": "GCI (Global Creative Institute) 修了生",
+    "company": "東京大学 松尾研究室",
     "location": "東京",
-    "period": "〜2025年3月",
+    "period": "2024年11月 - 2025年3月",
     "description": [
-      "LLM・生成AIを活用したWebアプリケーションの開発",
-      "Python / FastAPI / Next.js を用いたプロトタイプ開発",
-      "OpenAI API・LangChain を活用したAIアプリの実装",
-      "個人プロジェクトでのフルスタック開発経験"
+      "データサイエンスおよび機械学習の実践的なモデリング手法を体系的に習得",
+      "Pythonを用いた大規模データ分析と、実課題に対するアルゴリズムの適用を経験"
+    ]
+  },
+  {
+    "id": "meti-akatsuki",
+    "title": "Software Engineer (AI Agent)",
+    "company": "経済産業省「AKATSUKI」プロジェクト",
+    "location": "東京",
+    "period": "2024年5月 - 2025年2月",
+    "description": [
+      "LINE APIの制約下で動作する、txtファイルベースの独自通信アーキテクチャを設計・実装",
+      "低コストかつ実用的なUXを両立させたAIエージェントのプロトタイプ開発を牽引"
+    ]
+  },
+  {
+    "id": "kobe-univ",
+    "title": "学部生",
+    "company": "神戸大学 海洋政策科学部",
+    "location": "神戸市",
+    "period": "2022年4月 - 2026年3月",
+    "description": [
+      "海洋政策科学部にて政策・データサイエンスを横断的に学習",
+      "在学中にAI・ソフトウェア開発の自主学習を並行して推進"
+    ]
+  },
+  {
+    "id": "kobe-eng-lab",
+    "title": "Community Organizer",
+    "company": "Kobe x Engineer Lab（神戸市連携）",
+    "location": "神戸市",
+    "period": "2022年5月 - 2024年3月",
+    "description": [
+      "地域エンジニアコミュニティの運営メンバーとして、行政と技術者を繋ぐイベントを企画",
+      "技術共有文化の醸成を通じ、神戸地域のテックエコシステムの活性化に貢献"
     ]
   }
 ]

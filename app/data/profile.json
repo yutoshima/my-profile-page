@@ -1,8 +1,8 @@
 {
-  "name": "島 悠人",
-  "title": "AIエンジニア",
-  "summary": "LLM・生成AIを活用したプロダクト開発を専門とするAIエンジニアです。ビジネス課題をAIで解決することに情熱を持ち、プロトタイプから本番環境まで一気通貫で開発します。",
-  "location": "東京都",
+  "name": "Yuto Shima",
+  "title": "Software Development Engineer / AI & Robotics Specialist",
+  "summary": "最新のAI技術とロボティクスを融合し、実社会の課題を解決するソフトウェアエンジニアです。万博プロジェクトではAIコアの単独実装に加え、ROSを用いたロボット制御インフラの設計・構築を完遂。最新論文の知見をハードウェアを含む実システムへ統合する技術力を強みとしています。",
+  "location": "兵庫県神戸市（8月より東京都へ移転予定）",
   "email": "yutoshima1234@gmail.com",
   "profileImage": "/profile.jpg",
   "availableForWork": true,

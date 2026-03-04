@@ -1,50 +1,32 @@
 [
   {
+    "name": "AI Implementation / RAG",
+    "level": 95,
+    "description": "論文実装からプロダクトへの統合まで一貫して対応可能",
+    "category": "AI"
+  },
+  {
+    "name": "ROS / Robotics",
+    "level": 75,
+    "description": "ROSを用いたハードウェア連携および通信インフラ構築",
+    "category": "Robotics"
+  },
+  {
     "name": "Python",
-    "level": 80,
-    "description": "AI・データ処理の主要言語",
+    "level": 85,
+    "description": "AI・データ分析・システム開発におけるメイン言語",
     "category": "言語"
   },
   {
-    "name": "OpenAI API / LLM",
-    "level": 75,
-    "description": "GPT系モデルを活用したアプリ開発",
-    "category": "AI"
+    "name": "System Infrastructure",
+    "level": 70,
+    "description": "Docker等を用いた開発・運用環境の設計・構築",
+    "category": "Infrastructure"
   },
   {
-    "name": "LangChain",
+    "name": "TypeScript / Next.js",
     "level": 70,
-    "description": "LLMアプリケーションフレームワーク",
-    "category": "AI"
-  },
-  {
-    "name": "TypeScript",
-    "level": 70,
-    "description": "型安全なJavaScript",
-    "category": "言語"
-  },
-  {
-    "name": "Next.js / React",
-    "level": 70,
-    "description": "フロントエンド開発フレームワーク",
+    "description": "フロントエンド・AIエージェントのUI開発",
     "category": "フロントエンド"
-  },
-  {
-    "name": "FastAPI",
-    "level": 65,
-    "description": "PythonのWebフレームワーク",
-    "category": "バックエンド"
-  },
-  {
-    "name": "Git / GitHub",
-    "level": 75,
-    "description": "バージョン管理・チーム開発",
-    "category": "ツール"
-  },
-  {
-    "name": "Docker",
-    "level": 55,
-    "description": "コンテナ化・環境構築",
-    "category": "DevOps"
   }
 ]
