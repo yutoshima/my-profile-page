@@ -1,5 +1,13 @@
 [
   {
+    "id": "engineer-tokyo",
+    "title": "エンジニア",
+    "company": "IT企業",
+    "location": "東京",
+    "period": "2026年4月 -",
+    "description": []
+  },
+  {
     "id": "expo-waste-ai",
     "title": "Lead AI & Infrastructure Engineer",
     "company": "万博ゴミ分別AI 開発プロジェクト（有志チーム）",
