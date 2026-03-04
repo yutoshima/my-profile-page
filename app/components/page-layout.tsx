@@ -12,7 +12,7 @@ export const PageLayout = ({ title, description, label, children }: Props) => {
   return (
     <div className="bg-brand min-h-screen">
       <Navigation />
-      <div className="max-w-4xl mx-auto px-8 pt-32 pb-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-8 pt-32 pb-12">
         {label && (
           <p className="text-xs uppercase tracking-[0.25em] text-white/40 mb-3">{label}</p>
         )}

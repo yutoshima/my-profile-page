@@ -16,7 +16,7 @@ export default function Home() {
       <Navigation />
 
       {/* Hero */}
-      <section className="relative flex flex-col items-center justify-center min-h-screen px-8 text-center overflow-hidden">
+      <section className="relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-8 text-center overflow-hidden">
         {/* ドットグリッドパターン */}
         <div
           className="absolute inset-0 pointer-events-none opacity-25"
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
 
       {/* Contents */}
-      <section className="bg-surface px-8 py-20">
+      <section className="bg-surface px-4 sm:px-8 py-20">
         <div className="max-w-4xl mx-auto">
           <p className="text-xs uppercase tracking-[0.25em] text-white/40 text-center mb-12">
             Contents

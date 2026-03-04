@@ -36,7 +36,7 @@ export const Navigation = () => {
             : "bg-brand border-white/10"
         }`}
       >
-        <div className="max-w-4xl flex items-center justify-between px-8 py-6 mx-auto">
+        <div className="max-w-4xl flex items-center justify-between px-4 sm:px-8 py-6 mx-auto">
           {isHome ? (
             <span className="font-display font-bold text-white tracking-widest text-sm">
               YS
@@ -78,7 +78,7 @@ export const Navigation = () => {
         {/* モバイルメニュー */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-brand border-t border-white/10">
-            <div className="max-w-4xl mx-auto py-4 px-8 flex flex-col space-y-4">
+            <div className="max-w-4xl mx-auto py-4 px-4 sm:px-8 flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
