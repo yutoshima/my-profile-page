@@ -30,9 +30,12 @@ export default function ProjectsPage() {
           const experience = project.experienceId
             ? experiencesData.find((e) => e.id === project.experienceId)
             : null;
+          const linkedTechs = project.technologies.filter((t) => skillByTech[t]);
+          const plainTechs = project.technologies.filter((t) => !skillByTech[t]);
           return (
             <Card key={project.id} id={project.id}>
               <div className="p-6">
+                {/* メインコンテンツ */}
                 <div className="flex items-start justify-between gap-4 mb-3">
                   <h2 className="text-white font-semibold">{project.title}</h2>
                   {project.githubUrl && (
@@ -40,7 +43,7 @@ export default function ProjectsPage() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white/50 hover:text-white transition-colors flex-shrink-0 mt-0.5"
+                      className="text-white/40 hover:text-white transition-colors flex-shrink-0 mt-0.5"
                     >
                       <Github size={18} />
                     </a>
@@ -49,35 +52,41 @@ export default function ProjectsPage() {
                 <p className="text-white/60 text-base leading-relaxed mb-4">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech) => {
-                    const skill = skillByTech[tech];
-                    return skill ? (
-                      <Link
-                        key={tech}
-                        href={`/skills#${skill.id}`}
-                        className="px-3 py-1 text-sm text-white border border-white/30 rounded-full hover:border-white hover:text-white transition-colors"
-                      >
-                        {tech}
-                      </Link>
-                    ) : (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 text-sm text-white/50 border border-white/15 rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    );
-                  })}
+
+                {/* 技術タグ */}
+                <div className="flex flex-wrap gap-2">
+                  {linkedTechs.map((tech) => (
+                    <Link
+                      key={tech}
+                      href={`/skills#${skillByTech[tech].id}`}
+                      className="px-2.5 py-1 text-sm text-white/80 border border-white/25 rounded-full hover:border-white/60 hover:text-white transition-colors"
+                    >
+                      {tech}
+                    </Link>
+                  ))}
+                  {plainTechs.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-2.5 py-1 text-sm text-white/35 border border-white/10 rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
+
+                {/* 経歴リンク */}
                 {experience && (
-                  <Link
-                    href={`/experience#${experience.id}`}
-                    className="inline-flex items-center gap-1.5 text-xs text-white/40 hover:text-white/70 transition-colors"
-                  >
-                    <span>↗</span>
-                    <span>{experience.title} · {experience.period}</span>
-                  </Link>
+                  <div className="mt-4 pt-4 border-t border-white/10">
+                    <Link
+                      href={`/experience#${experience.id}`}
+                      className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-white/80 transition-colors"
+                    >
+                      <span className="text-white/25">経歴</span>
+                      <span>{experience.title}</span>
+                      <span className="text-white/25">·</span>
+                      <span className="text-white/35">{experience.period}</span>
+                    </Link>
+                  </div>
                 )}
               </div>
             </Card>

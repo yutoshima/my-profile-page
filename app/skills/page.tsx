@@ -33,20 +33,23 @@ export default function SkillsPage() {
                 );
                 return (
                   <Card key={skill.name} id={skill.id}>
-                    <div className="p-6 space-y-3">
-                      <div className="flex items-center justify-between">
+                    <div className="p-6">
+                      {/* スキル情報 */}
+                      <div className="flex items-center justify-between mb-3">
                         <h4 className="font-semibold text-white">{skill.name}</h4>
-                        <span className="text-base text-white/60">{skill.level}%</span>
+                        <span className="text-base text-white/50">{skill.level}%</span>
                       </div>
-                      <div className="w-full bg-white/30 rounded-full h-2">
+                      <div className="w-full bg-white/20 rounded-full h-2 mb-3">
                         <div
                           className="h-2 rounded-full bg-white"
                           style={{ width: `${skill.level}%` }}
                         />
                       </div>
                       <p className="text-white/60 text-base">{skill.description}</p>
+
+                      {/* 関連プロジェクト */}
                       {relatedProjects.length > 0 && (
-                        <div className="pt-1">
+                        <div className="mt-4 pt-4 border-t border-white/10">
                           <p className="text-xs text-white/30 uppercase tracking-wider mb-2">
                             関連プロジェクト
                           </p>
@@ -55,7 +58,7 @@ export default function SkillsPage() {
                               <Link
                                 key={p.id}
                                 href={`/projects#${p.id}`}
-                                className="text-sm text-white/60 hover:text-white underline underline-offset-2 transition-colors"
+                                className="px-2.5 py-1 text-sm text-white/60 border border-white/15 rounded-full hover:text-white hover:border-white/35 transition-colors"
                               >
                                 {p.title}
                               </Link>

@@ -12,17 +12,18 @@ export const PageNav = ({ current }: { current: string }) => {
   return (
     <div className="mt-20 pt-12 border-t border-white/10">
       <p className="text-xs uppercase tracking-[0.25em] text-white/40 mb-6">Other Pages</p>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-white/10">
         {others.map((page) => (
           <Link
             key={page.href}
             href={page.href}
-            className="group p-5 border border-white/10 rounded-xl hover:border-white/30 transition-all"
+            className="group bg-surface p-6 hover:bg-[#475d90] transition-colors duration-200"
           >
-            <p className="text-white font-medium mb-1 group-hover:text-white transition-colors">
-              {page.label}
-            </p>
-            <p className="text-white/50 text-sm">{page.description}</p>
+            <p className="text-white font-semibold mb-1">{page.label}</p>
+            <p className="text-white/50 text-sm leading-relaxed mb-4">{page.description}</p>
+            <span className="text-white/30 group-hover:text-white/80 transition-colors text-sm">
+              → 見る
+            </span>
           </Link>
         ))}
       </div>
