@@ -18,15 +18,6 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-8 text-center overflow-hidden">
-        {/* ドットグリッドパターン */}
-        <div
-          className="absolute inset-0 pointer-events-none opacity-25"
-          style={{
-            backgroundImage: "radial-gradient(rgba(255,255,255,0.5) 1px, transparent 1px)",
-            backgroundSize: "28px 28px",
-          }}
-        />
-
         <div className="relative z-10 max-w-2xl mx-auto">
           <p className="text-xs uppercase tracking-[0.3em] text-white/50 mb-10">
             AI Engineer · 2025
