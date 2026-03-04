@@ -23,7 +23,7 @@ export default function Home() {
             AI Engineer · 2025
           </p>
 
-          <h1 className="font-display text-7xl sm:text-9xl text-white leading-none tracking-tight mb-8">
+          <h1 className="font-display text-8xl sm:text-[12rem] text-white leading-none tracking-tight mb-8">
             Yuto<br />Shima
           </h1>
 
