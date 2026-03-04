@@ -27,8 +27,8 @@ export const Navigation = () => {
       <div
         className={`fixed inset-x-0 top-0 z-50 duration-200 border-b ${
           isIntersecting
-            ? "bg-sky-950/0 border-transparent"
-            : "bg-sky-950 border-sky-900"
+            ? "bg-brand/0 border-transparent"
+            : "bg-brand border-white/10"
         }`}
       >
         <div className="container flex items-center justify-between p-6 mx-auto">
@@ -84,7 +84,7 @@ export const Navigation = () => {
 
         {/* モバイルメニュー */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-sky-950 border-t border-sky-900">
+          <div className="md:hidden bg-brand border-t border-white/10">
             <div className="container mx-auto py-4 px-6 flex flex-col space-y-4">
               <Link
                 href="/projects"

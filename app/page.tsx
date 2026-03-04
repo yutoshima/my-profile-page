@@ -45,38 +45,38 @@ const sections = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-sky-950 text-white">
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 bg-sky-950 border-b border-sky-900">
-        <span className="text-sky-300 font-bold text-sm tracking-widest font-display">YS</span>
+    <div className="min-h-screen bg-brand text-white">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 bg-brand border-b border-white/10">
+        <span className="text-white font-bold text-sm tracking-widest font-display">YS</span>
         <ul className="hidden md:flex items-center gap-8">
           {navigation.map((item) => (
             <li key={item.href}>
-              <Link href={item.href} className="text-sm text-sky-400 hover:text-sky-200 transition-colors">
+              <Link href={item.href} className="text-sm text-white/70 hover:text-white transition-colors">
                 {item.name}
               </Link>
             </li>
           ))}
         </ul>
-        <Link href="/contact" className="text-sm text-sky-400 hover:text-sky-200 transition-colors">
+        <Link href="/contact" className="text-sm text-white/70 hover:text-white transition-colors">
           連絡する
         </Link>
       </nav>
 
       <section className="flex flex-col justify-center min-h-screen px-8 pt-24 pb-16 max-w-3xl mx-auto">
-        <p className="text-sky-400 text-sm mb-4">AIエンジニア · 2025年4月〜</p>
-        <h1 className="font-display text-5xl sm:text-7xl text-sky-100 mb-6 tracking-tight">
+        <p className="text-white/60 text-sm mb-4">AIエンジニア · 2025年4月〜</p>
+        <h1 className="font-display text-5xl sm:text-7xl text-white mb-6 tracking-tight">
           Yuto Shima
         </h1>
-        <p className="text-sky-300 text-lg max-w-lg leading-relaxed mb-10">
+        <p className="text-white/80 text-lg max-w-lg leading-relaxed mb-10">
           学生時代からAI・LLMを使ったプロダクト開発に取り組んできました。
           現在は社会人1年目です。
         </p>
 
         <div className="flex items-center gap-4 mb-16">
-          <Link href="/projects" className="px-5 py-2.5 bg-sky-400 text-sky-950 text-sm font-medium hover:bg-sky-300 transition-colors">
+          <Link href="/projects" className="px-5 py-2.5 bg-white text-brand text-sm font-medium hover:bg-white/90 transition-colors">
             作品を見る
           </Link>
-          <Link href="/contact" className="px-5 py-2.5 border border-sky-800 text-sky-300 text-sm hover:border-sky-400 hover:text-sky-200 transition-colors">
+          <Link href="/contact" className="px-5 py-2.5 border border-white/40 text-white text-sm hover:border-white hover:bg-white/10 transition-colors">
             連絡する
           </Link>
         </div>
@@ -84,35 +84,35 @@ export default function Home() {
         <div className="flex items-center gap-5">
           {socials.map((s) => (
             <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-              className="text-sky-600 hover:text-sky-300 transition-colors">
+              className="text-white/50 hover:text-white transition-colors">
               {s.icon}
             </a>
           ))}
         </div>
       </section>
 
-      <section className="px-8 py-16 border-t border-sky-900">
+      <section className="px-8 py-16 border-t border-white/10">
         <div className="max-w-3xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-sky-900">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/10">
             {sections.map((section) => (
               <Link key={section.href} href={section.href}
-                className="group p-8 bg-sky-950 hover:bg-sky-900/50 transition-colors">
-                <h3 className="text-sky-100 text-base font-medium mb-2 group-hover:text-sky-300 transition-colors">{section.title}</h3>
-                <p className="text-sky-500 text-sm leading-relaxed">{section.description}</p>
-                <span className="mt-4 inline-block text-xs text-sky-700 group-hover:text-sky-400 transition-colors">→</span>
+                className="group p-8 bg-brand hover:bg-brand-dark transition-colors">
+                <h3 className="text-white text-base font-medium mb-2">{section.title}</h3>
+                <p className="text-white/60 text-sm leading-relaxed">{section.description}</p>
+                <span className="mt-4 inline-block text-xs text-white/30 group-hover:text-white/70 transition-colors">→</span>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <footer className="px-8 py-6 border-t border-sky-900">
+      <footer className="px-8 py-6 border-t border-white/10">
         <div className="max-w-3xl mx-auto flex items-center justify-between">
-          <p className="text-sky-700 text-xs">© 2025 Yuto Shima</p>
+          <p className="text-white/30 text-xs">© 2025 Yuto Shima</p>
           <div className="flex items-center gap-4">
             {socials.map((s) => (
               <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={s.label}
-                className="text-sky-700 hover:text-sky-400 transition-colors">
+                className="text-white/30 hover:text-white/70 transition-colors">
                 {s.icon}
               </a>
             ))}
