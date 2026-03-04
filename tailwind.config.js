@@ -15,6 +15,7 @@ module.exports = {
         brand: {
           DEFAULT: "#5B72A8",
         },
+        surface: "#3D5280",
       },
       backgroundImage: {
         "gradient-radial":
